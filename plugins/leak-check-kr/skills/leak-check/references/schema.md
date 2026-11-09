@@ -17,7 +17,7 @@
 | `scope_note` | 대상 범위 보충 (가입 시기 등) |
 | `self_check.status` | `open` 조회 가능, `login` 로그인해야 보임, `closed` 닫힘, `none` 조회 창구 없음, `unknown` 확인 못 함 |
 | `self_check.url`, `how`, `checked` | 조회 주소, 방법, 마지막 확인일 |
-| `notices[]` | 실제 통지 예시. `channel` 경로, `sender` 발신, `date` 시기, `opening` 첫 부분, `basis` 출처 종류(`company_notice` 회사 공지, `user_post` 이용자가 올린 전사, `press` 보도, `notice` 개별 통지의 발신과 제목) |
+| `notices[]` | 실제 통지 예시. `channel` 경로, `sender` 발신, `date` 시기, `opening` 첫 부분, `basis` 출처 종류(`company_notice` 회사 공지, `user_post` 이용자 공개 인증 글(비식별), `press` 보도, `notice` 개별 통지(비식별)) |
 | `search.mail`, `search.sms` | 메일과 문자 검색어. `basis`가 `notice_text`면 실제 통지나 회사 공지 제목 같은 실제 문구 기반, `suggested`면 추정 |
 | `contact` | 회사 문의처 |
 | `limitation_earliest` | 가장 이른 시효 만료 예상 달. 알려진 달에 3년을 더한 값이고 법률 판단이 아니다 |
