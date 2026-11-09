@@ -1,0 +1,21 @@
+# 갱신 절차
+
+데이터는 `data/cases.json`과 `data/firms.json` 두 파일만 손으로 고친다. 나머지(FIRMS.md, CASES.md, README 요약, 스킬 스냅숏)는 스크립트가 만든다.
+
+## 주기
+
+- 월 1회, 매달 첫째 주.
+- 수시: 큰 유출 사건 공지, 개인정보보호위원회 처분, 새 원고 모집 소식이 들리면.
+
+## 순서
+
+1. `python3 scripts/check_links.py`로 조회 페이지와 법무법인 접수 주소가 살아 있는지 본다. `dead`는 고치고, `unknown`(봇 차단, 시간 초과)은 브라우저로 직접 연다.
+2. `firms.json`의 각 행을 법무법인 페이지에서 다시 확인한다. 조건, 상태, 마감, `quote`, `checked`를 고친다. 페이지에 없는 값은 `미기재`로 둔다.
+3. 새 사건은 회사 공지나 개인정보보호위원회 발표로 확인한 뒤 `cases.json`에 넣는다. 보도로만 확인했으면 `confidence: press_only`.
+4. `python3 scripts/validate_data.py --fix`로 이름 순 정렬과 금지어를 검사한다.
+5. `python3 scripts/render_docs.py`로 문서와 스냅숏을 다시 만든다.
+6. 커밋하고 푸시한다. 스킬 파일이 바뀌었으면 `plugin.json`과 `marketplace.json`의 version을 올리고 `scripts/build_zips.sh`로 zip을 만들어 Release에 올린다.
+
+## 넣지 않는 것
+
+법무법인 평가, 순위, 추천 문구, 승소 가능성, 예상 배상액, 추천 코드나 제휴 링크, 추적 파라미터는 넣지 않는다. 법무법인이 등재를 요청하거나 대가를 제안해도 받지 않는다.

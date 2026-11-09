@@ -1,0 +1,318 @@
+{
+  "schema": "leak-cases/firms@1",
+  "updated": "2026-11-09",
+  "about": "개인정보 유출 공동소송에서 원고를 받는 법무법인의 공개 조건. 각 법인 페이지에 적힌 내용을 옮긴 것이고, 추천이나 순위가 아니다. 이 목록을 만든 사람은 변호사가 아니며 어느 법인에서도 대가를 받지 않는다.",
+  "order": "사건마다 법무법인 이름 순(영문 먼저, 그다음 가나다순)으로 놓았다. 다른 기준으로 정렬하지 않는다.",
+  "stale_after_days": 30,
+  "status_values": {
+    "open": "페이지에 접수 중이라고 적혀 있음",
+    "open_unconfirmed": "모집 글이 있고 마감 공지는 없음. 접수 전에 법인에 확인",
+    "limited": "일부 대상만 받음 (조건은 note)",
+    "closed": "페이지에 마감이라고 적혀 있음",
+    "press_only": "법인 모집 페이지를 찾지 못했고 보도로만 확인"
+  },
+  "cases": [
+    {
+      "case": "tving",
+      "firms": [
+        {
+          "firm": "노바",
+          "status": "open",
+          "round": "1차",
+          "deadline": null,
+          "upfront": "0원",
+          "success_fee": "받는 금액의 30% (부가세 포함, 조정금 포함)",
+          "if_lost": "미기재",
+          "intake": "웹 폼, 모두싸인 전자서명",
+          "url": "https://novalaw.kr/tving/",
+          "documents": "미기재. 카카오뱅크 계좌는 받지 않음",
+          "quote": "0원. 초기 착수금 없이",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "더에이치 황해",
+          "status": "open",
+          "round": "1차",
+          "deadline": "추후 공지",
+          "upfront": "10,000원",
+          "success_fee": "10%",
+          "if_lost": "성공보수 청구 없음",
+          "intake": "웹 폼, 카카오 채널",
+          "url": "https://classaction.lawfirmthe-h.com/lawsuit/tving/mobile",
+          "documents": "미기재",
+          "quote": "1차 모집: 2026년 6월 4일 ~ (모집 마감일 추후 공지)",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "로피드",
+          "status": "closed",
+          "round": "1차, 2차",
+          "deadline": "2026-09-17",
+          "upfront": "11,000원 (부가세 포함, 3심까지)",
+          "success_fee": "10%, 심급당 5% 가산",
+          "if_lost": "약 1만에서 2만 원 내외 예상이라고 기재",
+          "intake": "웹",
+          "url": "https://lawpid.ly/cases/32dea57a",
+          "documents": "유출 안내 메일이나 조회 화면 캡처",
+          "quote": "1차 7/17, 2차 9/17 종료",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "세담",
+          "status": "open",
+          "round": "2차, 1차는 마감",
+          "deadline": null,
+          "upfront": "착수금 0원, 2차 참가비 5,000원 (1회)",
+          "success_fee": "20%",
+          "if_lost": "청구 없음",
+          "intake": "사건 페이지의 「2차 모집 안내 보기」",
+          "url": "https://sedam-classaction.co.kr/tving",
+          "documents": "미기재",
+          "quote": "2차는 참가비 5,000원(1회)의 유료 접수이며, 1차에 이미 접수하신 분은 중복 신청하실 필요가 없습니다.",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "지향",
+          "status": "open_unconfirmed",
+          "round": null,
+          "deadline": null,
+          "upfront": "참가비 10,000원",
+          "success_fee": "미기재",
+          "if_lost": "참가자에게 별도 부담 없음",
+          "intake": "네이버 카페 안내 후 전자계약, 입금",
+          "url": "https://www.jihyanglaw.com/?p=4031",
+          "documents": "미기재",
+          "quote": "소송 참가비 10,000원 외 아무 부담이 없습니다",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "coupang",
+      "firms": [
+        {
+          "firm": "LKB평산",
+          "status": "open",
+          "round": "4차",
+          "deadline": "정하지 않음",
+          "upfront": "금액 미기재 (부가세, 송달료, 인지대 포함, 추가 비용 없음)",
+          "success_fee": "1심 10%, 2심 15%, 3심 20%",
+          "if_lost": "미기재",
+          "intake": "홈페이지 신청서와 착수금 입금, 카카오 채널",
+          "url": "https://lkbps.com/bbs/board.php?bo_table=info&wr_id=810",
+          "documents": "쿠팡 가입 이력 자료",
+          "quote": "현재 4차 참여자 모집을 진행 중",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "노바",
+          "status": "closed",
+          "round": null,
+          "deadline": null,
+          "upfront": "미기재",
+          "success_fee": "미기재",
+          "if_lost": "미기재",
+          "intake": "접수 조회만 가능",
+          "url": "https://novalaw.kr/coupang/",
+          "documents": "미기재",
+          "quote": "신규 접수 마감",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "대륜",
+          "status": "closed",
+          "round": "1차",
+          "deadline": "2026-01-16",
+          "upfront": "99,000원 (1심)",
+          "success_fee": "10% 별도",
+          "if_lost": "미기재",
+          "intake": "상담 폼만 남아 있음",
+          "url": "https://www.daeryunlaw.com/notice/5915",
+          "documents": "미기재",
+          "quote": "2025년 12월 2일 ~ 2026년 1월 16일",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "더에이치 황해",
+          "status": "closed",
+          "round": null,
+          "deadline": null,
+          "upfront": "참여비 10,000원",
+          "success_fee": "미기재",
+          "if_lost": "미기재",
+          "intake": "소장 접수 완료 (11건, 원고 47,311명). 새 모집 안내 없음",
+          "url": "https://classaction.lawfirmthe-h.com/newsletter/coupang",
+          "documents": "별도 서류 불필요",
+          "quote": "참여비 10,000원 외 추가 비용은 일체 청구되지 않습니다",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "민행 대리인단 (classaction.ai.kr)",
+          "status": "open",
+          "round": "6차",
+          "deadline": null,
+          "upfront": "0원 (소송비용 포함)",
+          "success_fee": "30% (1심에서 3심)",
+          "if_lost": "미확인",
+          "intake": "웹 폼, 본인인증",
+          "url": "https://www.classaction.ai.kr/",
+          "documents": "쿠팡 회원정보 화면 캡처, 받을 계좌",
+          "quote": "현재 6차 원고단 모집중",
+          "checked": "2026-11-09",
+          "note": "법무법인 한 곳이 아니라 여러 곳이 함께 꾸린 대리인단 이름으로 모집한다."
+        },
+        {
+          "firm": "진심",
+          "status": "closed",
+          "round": null,
+          "deadline": null,
+          "upfront": "소송 비용 10,000원",
+          "success_fee": "10%",
+          "if_lost": "미기재",
+          "intake": "마감",
+          "url": "https://coupangaction.kr/",
+          "documents": "유출 안내 문자나 메일",
+          "quote": "모집 마감",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "skt",
+      "firms": [
+        {
+          "firm": "노바",
+          "status": "limited",
+          "round": "4차 추가 접수",
+          "deadline": null,
+          "upfront": "회선당 10,000원 (부가세 포함, 2026-09-14 기준)",
+          "success_fee": "20% (부가세 별도, 2026-09-14 기준)",
+          "if_lost": "미기재",
+          "intake": "구글 폼, 회선마다 따로",
+          "url": "https://novalaw.kr/skt/",
+          "documents": "미기재",
+          "note": "안내를 받은 사람만 추가 접수한다고 적혀 있다.",
+          "quote": "4차 추가 접수(안내받은 분)",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "대건",
+          "status": "closed",
+          "round": null,
+          "deadline": "2026-05-08",
+          "upfront": "미기재",
+          "success_fee": "판결 금액의 15% (수수료 별도)",
+          "if_lost": "미기재",
+          "intake": "새 모집 공지 없음",
+          "url": "https://daegun-criminal.kr/",
+          "documents": "이용계약 등록사항 증명서 1부",
+          "quote": "서류 반려자 재접수 2026. 5. 8. 자정 종료",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "대륜",
+          "status": "open_unconfirmed",
+          "round": null,
+          "deadline": null,
+          "upfront": "미기재",
+          "success_fee": "미기재",
+          "if_lost": "미기재",
+          "intake": "상담 폼 (이름, 연락처, 지역)",
+          "url": "https://www.daeryunlaw.com/suit",
+          "documents": "미기재",
+          "quote": "상담 폼이 목록에 남아 있고 모집 상태는 적혀 있지 않다",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "lottecard",
+      "firms": [
+        {
+          "firm": "지향",
+          "status": "open_unconfirmed",
+          "round": null,
+          "deadline": null,
+          "upfront": "10,000원 (인지대, 송달료 등)",
+          "success_fee": "최종 판결금액의 10% (부가세 별도)",
+          "if_lost": "참가자에게 별도 부담 없음",
+          "intake": "모두싸인 전자계약",
+          "url": "https://www.jihyanglaw.com/?p=3553",
+          "documents": "미기재",
+          "quote": "10,000원의 비용(인지대, 송달료 등)",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "ddareungi",
+      "firms": [
+        {
+          "firm": "노바",
+          "status": "open",
+          "round": null,
+          "deadline": null,
+          "upfront": "미기재 (위임계약서에서 확인)",
+          "success_fee": "미기재 (위임계약서에서 확인)",
+          "if_lost": "미기재",
+          "intake": "웹 폼",
+          "url": "https://novalaw.kr/",
+          "documents": "미기재",
+          "quote": "보수는 위임계약서에서 확인",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "gangnamunni",
+      "firms": [
+        {
+          "firm": "YK",
+          "status": "press_only",
+          "round": null,
+          "deadline": null,
+          "upfront": "미확인",
+          "success_fee": "미확인",
+          "if_lost": "미확인",
+          "intake": "법인 모집 페이지를 찾지 못했다. 2026-09-10 보도로만 확인",
+          "url": null,
+          "documents": "미확인",
+          "quote": "원고인단 모집에 나섰습니다 (보도)",
+          "checked": "2026-11-09"
+        },
+        {
+          "firm": "로피드",
+          "status": "closed",
+          "round": "1차",
+          "deadline": "2026-10-06",
+          "upfront": "11,000원",
+          "success_fee": "10%, 심급당 5% 가산",
+          "if_lost": "미기재",
+          "intake": "마감. 해외 거주자 의향 접수만 열려 있음 (정식 위임 아님)",
+          "url": "https://lawpid.ly/cases",
+          "documents": "미기재",
+          "quote": "9/8~10/6 모집, 마감",
+          "checked": "2026-11-09"
+        }
+      ]
+    }
+  ],
+  "no_recruitment_found": [
+    "hollys",
+    "bithumb",
+    "myrealtrip",
+    "ezwel",
+    "gmarket",
+    "weverse",
+    "sm",
+    "hybe",
+    "golfzon",
+    "modetour",
+    "gsretail",
+    "netmarble",
+    "louisvuitton",
+    "dior",
+    "fastcampus",
+    "kakaopay"
+  ]
+}
