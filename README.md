@@ -37,26 +37,43 @@
 - 메일과 문자 내용을 어디로 보내는 일. 이 도구는 이 저장소의 공개 파일 두 개(`data/cases.json`, `data/firms.json`)를 읽기만 합니다.
 - 법무법인에서 돈을 받는 일. 만든 사람은 변호사가 아니고 어느 법무법인에서도 대가를 받지 않습니다. 법률 자문이 아닙니다.
 
-## 설치
+## 쓰는 법
 
-설치한 뒤 「내 개인정보 유출됐는지 봐 줘」, 「티빙 유출 소송 조건 보여 줘」처럼 말하면 됩니다.
+개발을 몰라도 됩니다. 쉬운 순서대로 적었습니다.
 
-### Claude Code
+### 1. 문장 하나 붙여 넣기 (설치 없음, ChatGPT, Claude, Gemini 모두)
+
+쓰고 있는 AI의 새 대화에 아래 문장을 그대로 붙여 넣으세요. 웹 검색이나 파일 읽기가 되는 AI면 됩니다.
+
+```
+개인정보 유출 확인을 도와줘. 먼저 이 두 파일을 읽어 줘. https://raw.githubusercontent.com/ernestolee13/leak-check-kr/main/data/cases.json 그리고 https://raw.githubusercontent.com/ernestolee13/leak-check-kr/main/data/firms.json . 내가 어느 사건의 대상인지 메일함과 문자함에서 찾을 검색어를 알려 주고, 메일 연결이 되어 있으면 직접 찾아서 날짜, 발신자, 제목만 보여 줘. 내가 원하면 그 사건에 원고를 받는 법무법인을 파일에 적힌 순서(이름 순) 그대로 보여 줘. 추천, 순위, 받을 금액 예측은 하지 말고, 로그인, 본인인증, 서명, 결제, 제출은 내가 직접 할게.
+```
+
+### 2. claude.ai에 설치하기 (웹과 모바일 앱, 무료 요금제도 됨)
+
+한 번만 하면 이후 대화에서 계속 쓸 수 있습니다. 설치는 컴퓨터의 웹 브라우저에서 하세요.
+
+1. [leak-check-skill.zip](https://github.com/ernestolee13/leak-check-kr/releases/latest/download/leak-check-skill.zip)을 내려받습니다. 압축은 풀지 않습니다.
+2. [claude.ai](https://claude.ai)에 로그인하고 왼쪽 아래 메뉴에서 **Customize**(사용자 지정)를 엽니다. 처음이면 코드 실행(Code execution) 기능을 켜 달라는 안내가 나오니 켭니다.
+3. **Skills**에서 업로드를 눌러 내려받은 zip 파일을 고르고, 목록에 생긴 **leak-check**를 켭니다.
+4. 새 대화에서 「내 개인정보 유출됐는지 봐 줘」라고 말합니다.
+
+메일함까지 찾게 하려면 같은 Customize 화면의 **Connectors**에서 Gmail을 연결합니다. 요금제에 따라 연결이 안 될 수 있는데, 그래도 도우미가 검색어를 알려 주니 메일함에서 직접 찾으면 됩니다.
+
+### 3. Claude 데스크톱 앱 (Cowork)
+
+[leak-check-kr.zip](https://github.com/ernestolee13/leak-check-kr/releases/latest/download/leak-check-kr.zip)을 받아 **Customize**, **Plugins**, **Add**, **Upload plugin** 순서로 올립니다. 브라우저 연결이 켜져 있으면 조회 페이지와 신청 페이지를 같이 열어 줍니다.
+
+### 4. 개발자용
+
+**Claude Code**
 
 ```
 /plugin marketplace add ernestolee13/leak-check-kr
 /plugin install leak-check-kr@leak-check-kr
 ```
 
-### Claude 데스크톱 앱 (Cowork)
-
-[Releases](https://github.com/ernestolee13/leak-check-kr/releases/latest)에서 `leak-check-kr.zip`을 받아 설정의 플러그인 메뉴에서 올립니다. 이 저장소를 플러그인 마켓으로 추가해도 됩니다. 브라우저 연결이 켜져 있으면 조회 페이지와 신청 페이지를 같이 엽니다.
-
-### claude.ai 웹과 앱
-
-[Releases](https://github.com/ernestolee13/leak-check-kr/releases/latest)에서 `leak-check-skill.zip`을 받아 설정의 스킬 메뉴에서 올립니다. 메일 찾기, 조건 비교, 링크 안내까지 됩니다.
-
-### Codex
+**Codex**
 
 Codex에게 이렇게 말합니다.
 
@@ -72,9 +89,9 @@ mkdir -p ~/.agents/skills
 cp -r leak-check-kr/plugins/leak-check-kr/skills/leak-check ~/.agents/skills/
 ```
 
-### 설치 없이
+### 설치 없이 읽기
 
-[CASES.md](CASES.md)와 [FIRMS.md](FIRMS.md)를 그대로 읽어도 됩니다. 쓰는 AI에 두 파일 주소를 주고 물어봐도 됩니다.
+[CASES.md](CASES.md)와 [FIRMS.md](FIRMS.md)를 그대로 읽어도 됩니다.
 
 ## 갱신
 
