@@ -14,7 +14,9 @@
 3. 새 사건은 회사 공지나 개인정보보호위원회 발표로 확인한 뒤 `cases.json`에 넣는다. 보도로만 확인했으면 `confidence: press_only`.
 4. `python3 scripts/validate_data.py --fix`로 이름 순 정렬과 금지어를 검사한다.
 5. `python3 scripts/render_docs.py`로 문서와 스냅숏을 다시 만든다.
-6. 커밋하고 푸시한다. 스킬 파일이 바뀌었으면 `plugin.json`과 `marketplace.json`의 version을 올리고 `scripts/build_zips.sh`로 zip을 만들어 Release에 올린다.
+6. 이슈와 PR로 들어온 제보를 CONTRIBUTING.md 기준으로 처리한다. 추가는 공식 페이지로 확인되면 바로, 마감 표시와 삭제는 명확한 근거가 있을 때만.
+7. 커밋하고 푸시한다. 스킬 파일이 바뀌었으면 `plugin.json`과 `marketplace.json`의 version을 올리고 `scripts/build_zips.sh`로 zip을 만들어 Release에 올린다.
+8. 안내 페이지(leak-cases.vibestash.app)의 표를 데이터에서 다시 만들어 배포하고, 바뀐 사건을 고른 알림 신청자에게 알린다.
 
 ## 통지 예시를 넣을 때
 
