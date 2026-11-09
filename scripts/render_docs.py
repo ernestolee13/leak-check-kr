@@ -65,6 +65,14 @@ def firms_md(cases: dict, firms: dict) -> str:
                 deadline = r.get("deadline") or "적혀 있지 않음"
                 out.append(f"| {firm} | {status} | {cell(r['upfront'])} | {cell(r['success_fee'])} | {cell(r['if_lost'])} | {cell(deadline)} | {cell(r['intake'])} | {r['checked']} |")
             out.append("")
+        for r in live:
+            if r.get("steps"):
+                out.append(f"**{r['firm']} 신청 순서**" + (f" ([신청 바로가기]({r['apply_url']}))" if r.get("apply_url") else ""))
+                out.append("")
+                out += [f"{i}. {st}" for i, st in enumerate(r["steps"], 1)]
+                if r.get("confirm"):
+                    out.append(f"\n접수 확인과 문의: {r['confirm']}")
+                out.append("")
         if closed:
             out.append("마감: " + ", ".join(f"{r['firm']}" + (f" ({r['deadline']})" if r.get("deadline") else "") for r in closed))
             out.append("")

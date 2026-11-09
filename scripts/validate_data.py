@@ -92,6 +92,14 @@ def check(cases: dict, firms: dict) -> list[str]:
                 errs.append(f"{tag}: checked must be YYYY-MM-DD")
             if r.get("status") == "limited" and not r.get("note"):
                 errs.append(f"{tag}: limited rows must say who is accepted in 'note'")
+            for k in ("apply_url",):
+                v = r.get(k)
+                if v and (not v.startswith("https://") or any(TRACKING_PARAMS.match(q) for q in parse_qs(urlparse(v).query))):
+                    errs.append(f"{tag}: {k} must be https without tracking params")
+            if r.get("status") in ("open", "limited") and not r.get("steps"):
+                errs.append(f"{tag}: open rows need 'steps' (how to apply)")
+            if any(re.search(r"\d{2,6}-\d{2,6}-\d{4,8}", st) for st in r.get("steps", [])):
+                errs.append(f"{tag}: steps must not carry bank account numbers")
             url = r.get("url")
             if url and not url.startswith("https://"):
                 errs.append(f"{tag}: url must be https")
