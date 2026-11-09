@@ -1,0 +1,19 @@
+name: 회사 조회 페이지 변경
+description: 유출 여부 조회 페이지가 새로 열렸거나, 닫혔거나, 주소가 바뀌었을 때.
+title: "[조회 페이지] 회사명"
+labels: ["check-page"]
+body:
+  - type: input
+    id: company
+    attributes: {label: 회사}
+    validations: {required: true}
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 무엇이 바뀌었나
+      options: ["새로 열림", "닫힘", "주소 바뀜", "로그인이 필요해짐"]
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: 회사 공식 주소, description: "문자로 받은 링크가 아니라 회사 홈페이지나 공지에 있는 주소"}
+    validations: {required: true}

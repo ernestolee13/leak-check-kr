@@ -80,8 +80,22 @@ cp -r leak-check-kr/plugins/leak-check-kr/skills/leak-check ~/.agents/skills/
 
 사건과 법무법인 조건은 월 1회, 그리고 큰 유출 사건이나 새 원고 모집이 나왔을 때 다시 확인해 올립니다. 도구는 실행할 때마다 이 저장소의 최신 데이터를 먼저 읽으므로 다시 설치하지 않아도 됩니다. 각 행의 확인일이 30일을 넘으면 도구가 「다시 확인하세요」라고 알려 줍니다.
 
+## 제보와 수정 요청
+
+빠진 모집, 바뀐 조건, 새 사건, 조회 페이지 변화, 실제 통지 예시(비식별)를 [이슈 양식](https://github.com/ernestolee13/leak-check-kr/issues/new/choose)이나 PR, help@vibestash.app 로 알려 주세요. 법무법인이 직접 알려 와도 같은 기준으로 다룹니다.
+
+- 추가: 공식 페이지로 확인되면 바로 넣습니다.
+- 마감 표시와 삭제: 마감 공지처럼 명확한 근거가 있을 때만 합니다.
+- 특정 법무법인을 강조하거나 순서를 바꾸지 않고, 대가를 받지 않습니다.
+
+자세한 기준은 [CONTRIBUTING.md](CONTRIBUTING.md)에 있습니다.
+
+## 메일 알림
+
+에이전트를 쓰지 않아도 됩니다. [안내 페이지](https://leak-cases.vibestash.app/#alerts)에서 사건을 고르고 이메일을 남기면 모집이 열리거나 조건이 바뀔 때 알려 드립니다.
+
 ## 문의
 
-틀린 내용, 바뀐 조건, 빠진 사건은 [이슈](https://github.com/ernestolee13/leak-check-kr/issues)나 help@vibestash.app 로 알려 주세요. 법무법인의 등재 요청이나 광고는 받지 않습니다. 조건은 각 법무법인이 공개한 페이지를 기준으로만 옮깁니다.
+틀린 내용은 위 양식이나 help@vibestash.app 로 알려 주세요.
 
 안내 페이지: https://leak-cases.vibestash.app/

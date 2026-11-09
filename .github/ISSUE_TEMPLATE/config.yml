@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 메일로 알리기
+    url: mailto:help@vibestash.app
+    about: GitHub 계정이 없으면 메일로 알려 주세요. 같은 기준으로 다룹니다.
+  - name: 메일 알림 신청
+    url: https://leak-cases.vibestash.app/#alerts
+    about: 내 사건에 모집이 열리거나 조건이 바뀌면 메일로 받습니다.

@@ -1,0 +1,35 @@
+name: 실제 통지 예시 제보 (비식별)
+description: 받은 유출 통지 문자나 메일의 발신과 첫 문장을 알려 주면 다른 사람이 자기 메일함에서 찾기 쉬워집니다.
+title: "[통지 예시] 회사명"
+labels: ["notice-example"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **꼭 지워 주세요**: 받는 사람 이름, 내 전화번호와 이메일, 회원번호와 아이디, 금액이나 주문 같은 내 정보, 날짜의 일.
+        남길 것은 회사 쪽 발신(번호나 주소), 제목, 첫 문장, 받은 달뿐입니다. 저장소에는 「개별 통지(비식별)」로만 표기하고 누가 보냈는지 적지 않습니다.
+  - type: input
+    id: company
+    attributes: {label: 회사}
+    validations: {required: true}
+  - type: dropdown
+    id: channel
+    attributes: {label: 받은 경로, options: ["문자", "이메일", "알림톡", "앱 알림"]}
+    validations: {required: true}
+  - type: input
+    id: sender
+    attributes: {label: 회사 쪽 발신 번호나 주소, placeholder: "예: 1588-0000 또는 noreply@회사.com"}
+  - type: textarea
+    id: text
+    attributes: {label: 제목과 첫 문장 (비식별), description: "개인 정보를 지운 뒤 붙여 넣어 주세요"}
+    validations: {required: true}
+  - type: input
+    id: month
+    attributes: {label: 받은 달, placeholder: "예: 2026-10"}
+  - type: checkboxes
+    id: deid
+    attributes:
+      label: 확인
+      options:
+        - label: 이름, 연락처, 회원번호, 날짜의 일을 지웠습니다
+          required: true

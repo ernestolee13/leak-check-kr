@@ -1,0 +1,34 @@
+name: 법무법인 모집 추가
+description: 아직 목록에 없는 원고 모집을 알립니다. 공식 모집 페이지로 확인되면 바로 넣습니다.
+title: "[모집 추가] 사건명 / 법무법인"
+labels: ["firm-add"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        추가 기준: 법무법인의 **공식 모집 페이지**에서 내용이 확인되면 바로 넣습니다. 보도만 있으면 「보도로만 확인」으로 넣습니다.
+        목록 순서는 언제나 법무법인 이름 순입니다. 특정 법무법인을 위에 올리거나 강조하지 않고, 등재 대가를 받지 않습니다.
+  - type: input
+    id: case
+    attributes: {label: 사건, placeholder: "예: 할리스"}
+    validations: {required: true}
+  - type: input
+    id: firm
+    attributes: {label: 법무법인, placeholder: "예: 법무법인 OO"}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: 공식 모집 페이지 주소, description: "추천 코드나 추적 파라미터(utm 등)가 없는 주소"}
+    validations: {required: true}
+  - type: textarea
+    id: terms
+    attributes:
+      label: 페이지에 적힌 조건
+      description: 착수금이나 참가비, 성공보수(심급 가산), 패소 시 부담, 마감. 페이지에 없는 값은 「미기재」로 적어 주세요.
+    validations: {required: true}
+  - type: dropdown
+    id: relation
+    attributes:
+      label: 알리는 분
+      options: ["이용자", "해당 법무법인 관계자", "기타"]
+    validations: {required: true}

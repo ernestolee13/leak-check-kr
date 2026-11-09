@@ -1,0 +1,16 @@
+name: 유출 사건 추가
+description: 목록에 없는 개인정보 유출 사건을 알립니다.
+title: "[사건 추가] 회사명"
+labels: ["case-add"]
+body:
+  - type: input
+    id: company
+    attributes: {label: 회사나 서비스}
+    validations: {required: true}
+  - type: input
+    id: notice
+    attributes: {label: 회사 공지나 개인정보보호위원회 발표 주소, description: "없으면 보도 주소. 보도만 있으면 「보도로만 확인」으로 넣습니다"}
+    validations: {required: true}
+  - type: textarea
+    id: detail
+    attributes: {label: 아는 내용, description: "공지일, 대상, 유출 항목, 조회 페이지가 있다면 그 주소"}
