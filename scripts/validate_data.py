@@ -106,7 +106,14 @@ def check(cases: dict, firms: dict) -> list[str]:
             for w in BANNED_WORDS:
                 if w in blob:
                     errs.append(f"{tag}: banned word '{w}'")
-    none = set(firms.get("no_recruitment_found", []))
+    none = set()
+    for n in firms.get("no_recruitment_found", []):
+        if not isinstance(n, dict) or not n.get("case"):
+            errs.append(f"firms.no_recruitment_found: entries must be {{case, checked}}, got {n!r}")
+            continue
+        if not DATE_RE.match(n.get("checked") or ""):
+            errs.append(f"firms.no_recruitment_found/{n['case']}: checked must be YYYY-MM-DD")
+        none.add(n["case"])
     for cid in none - case_ids:
         errs.append(f"firms.no_recruitment_found: unknown case '{cid}'")
     for cid in none & seen_cases:

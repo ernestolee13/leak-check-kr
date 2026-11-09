@@ -68,8 +68,12 @@ def firms_md(cases: dict, firms: dict) -> str:
         if closed:
             out.append("마감: " + ", ".join(f"{r['firm']}" + (f" ({r['deadline']})" if r.get("deadline") else "") for r in closed))
             out.append("")
-    none = [names.get(c, c) for c in firms.get("no_recruitment_found", [])]
-    out += ["## 원고를 받는 곳을 찾지 못한 사건", "", ", ".join(none) + ". 통지 문자와 메일을 지우지 말고 보관해 둔다.", ""]
+    out += ["## 아직 원고를 받는 곳이 없는 사건", "",
+            "법무법인 사이트, 모집 플랫폼, 「원고 모집」 보도를 찾아봤지만 지금 접수하는 곳을 찾지 못한 사건이다. 통지 문자와 메일을 지우지 말고 보관해 둔다.", "",
+            "| 사건 | 마지막 확인 | 메모 |", "|---|---|---|"]
+    for n in firms.get("no_recruitment_found", []):
+        out.append(f"| {cell(names.get(n['case'], n['case']))} | {n['checked']} | {(n.get('note') or '').replace('|', '/')} |")
+    out.append("")
     return "\n".join(out)
 
 
@@ -121,6 +125,9 @@ def summary_block(cases: dict, firms: dict) -> str:
         live = [r for r in b["firms"] if r["status"] != "closed"]
         if live:
             lines.append(f"- {names[b['case']]}: " + ", ".join(f"{r['firm']} ({STATUS[r['status']]})" for r in live))
+    none = firms.get("no_recruitment_found", [])
+    if none:
+        lines += ["", f"- 아직 원고를 받는 곳이 없음 ({len(none)}건): " + ", ".join(names[n["case"]] for n in none)]
     lines += ["", "법무법인 이름 순이며 추천이 아니다. 조건과 공식 링크는 [FIRMS.md](FIRMS.md), 사건별 확인법은 [CASES.md](CASES.md).", "<!-- summary:end -->"]
     return "\n".join(lines)
 

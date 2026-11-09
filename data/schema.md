@@ -41,7 +41,7 @@
 | `documents` | 요구 서류 |
 | `quote` | 판단 근거로 페이지에서 옮긴 문장 |
 | `checked` | 마지막 확인일 |
-| `no_recruitment_found` | 모집하는 곳을 찾지 못한 사건 |
+| `no_recruitment_found[]` | 모집하는 곳을 찾지 못한 사건. `case`, `checked`(마지막으로 찾아본 날), `note`(선택) |
 
 ## 넣지 않는 것
 

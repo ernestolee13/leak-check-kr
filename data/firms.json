@@ -62,13 +62,13 @@
           "status": "open",
           "round": "2차, 1차는 마감",
           "deadline": null,
-          "upfront": "착수금 0원, 2차 참가비 5,000원 (1회)",
-          "success_fee": "20%",
-          "if_lost": "청구 없음",
-          "intake": "사건 페이지의 「2차 모집 안내 보기」",
-          "url": "https://sedam-classaction.co.kr/tving",
-          "documents": "미기재",
-          "quote": "2차는 참가비 5,000원(1회)의 유료 접수이며, 1차에 이미 접수하신 분은 중복 신청하실 필요가 없습니다.",
+          "upfront": "착수금 0원, 2차 참가비 5,000원 (1회, 결제 후 환불 불가)",
+          "success_fee": "20% (1차 안내 기준, 2차 페이지에는 비율 미기재)",
+          "if_lost": "참가비 외 부담 없음",
+          "intake": "웹 신청, 본인확인, 서류 제출 후 참가비 결제",
+          "url": "https://sedam-classaction.co.kr/tving2",
+          "documents": "위임장, 피해 증빙 (유출 통지 또는 가입 이력)",
+          "quote": "현재 31,523명 참여 · 목표 100,000명. 1회 참가비 5,000원만 받으며, 별도의 착수금이나 추가 부담은 없습니다.",
           "checked": "2026-11-09"
         },
         {
@@ -160,6 +160,20 @@
           "quote": "현재 6차 원고단 모집중",
           "checked": "2026-11-09",
           "note": "법무법인 한 곳이 아니라 여러 곳이 함께 꾸린 대리인단 이름으로 모집한다."
+        },
+        {
+          "firm": "세담",
+          "status": "open",
+          "round": null,
+          "deadline": null,
+          "upfront": "참가비 10,000원 (부가세 포함, 1회, 결제 후 환불 불가)",
+          "success_fee": "10% (부가세 포함)",
+          "if_lost": "통상 소송 실비는 세담 부담 (예외는 위임계약서 확인)",
+          "intake": "웹 신청, 본인 명의 휴대폰 인증, 서류 제출과 전자서명 후 참가비 결제",
+          "url": "https://sedam-classaction.co.kr/coupang",
+          "documents": "유출 통지 또는 공식 확인 결과, 위임장",
+          "quote": "참가비 10,000원(부가세 포함)·성과보수 10%(부가세 포함)",
+          "checked": "2026-11-09"
         },
         {
           "firm": "진심",
@@ -293,26 +307,204 @@
           "documents": "미기재",
           "quote": "9/8~10/6 모집, 마감",
           "checked": "2026-11-09"
+        },
+        {
+          "firm": "세담",
+          "status": "open",
+          "round": null,
+          "deadline": null,
+          "upfront": "참가비 10,000원 (부가세 포함, 1회, 결제 후 환불 불가)",
+          "success_fee": "10% (부가세 포함)",
+          "if_lost": "통상 소송 실비는 세담 부담 (예외는 위임계약서 확인)",
+          "intake": "웹 신청, 본인 명의 휴대폰 인증, 서류 제출과 전자서명 후 참가비 결제",
+          "url": "https://sedam-classaction.co.kr/gangnamunni",
+          "documents": "유출 통지 또는 공식 확인 결과, 위임장",
+          "quote": "모집 목표 100,000명 · 접수 중. 참가비 10,000원(부가세 포함)·성과보수 10%(부가세 포함)",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "gsretail",
+      "firms": [
+        {
+          "firm": "세담",
+          "status": "closed",
+          "round": null,
+          "deadline": null,
+          "upfront": "참가비 10,000원",
+          "success_fee": "10%",
+          "if_lost": "통상 소송 실비는 세담 부담 (예외는 위임계약서 확인)",
+          "intake": "현재 신규 접수 없음. 일정은 페이지 공지",
+          "url": "https://sedam-classaction.co.kr/gsretail",
+          "documents": "GS SHOP, GS25 통지를 구분해 준비",
+          "quote": "모집 목표 100,000명 · 현재 신규 접수 없음",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "shinhan_bank",
+      "firms": [
+        {
+          "firm": "세담",
+          "status": "open",
+          "round": null,
+          "deadline": null,
+          "upfront": "참가비 10,000원 (부가세 포함, 1회, 결제 후 환불 불가)",
+          "success_fee": "10% (부가세 포함)",
+          "if_lost": "통상 소송 실비는 세담 부담 (예외는 위임계약서 확인)",
+          "intake": "웹 신청, 본인 명의 휴대폰 인증, 서류 제출과 전자서명 후 참가비 결제",
+          "url": "https://sedam-classaction.co.kr/shinhan",
+          "documents": "유출 통지 또는 공식 확인 결과, 위임장",
+          "quote": "참가비 10,000원(부가세 포함)·성과보수 10%(부가세 포함)",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "duo",
+      "firms": [
+        {
+          "firm": "세담",
+          "status": "open",
+          "round": "2차",
+          "deadline": null,
+          "upfront": "참가비 10,000원 (부가세 포함, 1회, 결제 후 환불 불가)",
+          "success_fee": "10% (부가세 포함)",
+          "if_lost": "통상 소송 실비는 세담 부담 (예외는 위임계약서 확인)",
+          "intake": "웹 신청, 본인 명의 휴대폰 인증, 서류 제출과 전자서명 후 참가비 결제",
+          "url": "https://sedam-classaction.co.kr/duo2",
+          "documents": "유출 통지 또는 공식 확인 결과, 위임장",
+          "quote": "모집 목표 100,000명 · 접수 중. 참가비 10,000원·성과보수 10%",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "fly",
+      "firms": [
+        {
+          "firm": "세담",
+          "status": "open",
+          "round": null,
+          "deadline": null,
+          "upfront": "참가비 10,000원 (부가세 포함, 1회, 결제 후 환불 불가)",
+          "success_fee": "미기재 (위임계약서 확인)",
+          "if_lost": "참가비 외 부담 없음",
+          "intake": "웹 신청, 본인 명의 휴대폰 인증, 서류 제출과 전자서명 후 참가비 결제",
+          "url": "https://sedam-classaction.co.kr/fly",
+          "documents": "유출 통지 또는 공식 확인 결과, 위임장",
+          "quote": "모집 목표 100,000명 · 접수 중. 1회 참가비 10,000원만 받으며, 별도의 착수금이나 추가 부담은 없습니다.",
+          "checked": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "case": "cupost",
+      "firms": [
+        {
+          "firm": "세담",
+          "status": "closed",
+          "round": "2차",
+          "deadline": null,
+          "upfront": "0원",
+          "success_fee": "20% (위임계약서 기준)",
+          "if_lost": "미기재",
+          "intake": "현재 신규 접수 없음. 일정은 페이지 공지",
+          "url": "https://sedam-classaction.co.kr/cu2",
+          "documents": "유출 통지 또는 공식 확인 결과, 위임장",
+          "quote": "현재 1,623명 참여 · 접수 준비·마감. 현재 신규 접수를 받지 않습니다.",
+          "checked": "2026-11-09"
         }
       ]
     }
   ],
   "no_recruitment_found": [
-    "hollys",
-    "bithumb",
-    "myrealtrip",
-    "ezwel",
-    "gmarket",
-    "weverse",
-    "sm",
-    "hybe",
-    "golfzon",
-    "modetour",
-    "gsretail",
-    "netmarble",
-    "louisvuitton",
-    "dior",
-    "fastcampus",
-    "kakaopay"
+    {
+      "case": "hollys",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "bithumb",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "myrealtrip",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "ezwel",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "gmarket",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "weverse",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "sm",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "hybe",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "golfzon",
+      "checked": "2026-11-09",
+      "note": "법무법인 씨케이가 23명 대리로 2026-06 소 제기, 새 참여자 모집 없음"
+    },
+    {
+      "case": "modetour",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "netmarble",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "louisvuitton",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "dior",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "fastcampus",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "kakaopay",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "miraeasset_sec",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "daishin",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "jobis",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "miraeasset_life",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "hanyang_sec",
+      "checked": "2026-11-09"
+    },
+    {
+      "case": "yegaram",
+      "checked": "2026-11-09"
+    }
   ]
 }
