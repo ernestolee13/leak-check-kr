@@ -20,10 +20,10 @@ description: 한국 개인정보 유출 사건(티빙, 쿠팡, SK텔레콤, 롯�
 
 ## 데이터
 
-- 사건별 유출 찾는 법: `https://raw.githubusercontent.com/ernestolee13/leak-check-kr/main/data/cases.json`
-- 지금 원고를 받는 법무법인: `https://raw.githubusercontent.com/ernestolee13/leak-check-kr/main/data/firms.json`
+- 사건별 유출 찾는 법: `https://leak-cases.vibestash.app/data/cases.json`
+- 지금 원고를 받는 법무법인: `https://leak-cases.vibestash.app/data/firms.json`
 
-웹에서 파일을 가져올 수 있으면 위 주소에서 최신본을 먼저 읽는다. 안 되면 이 스킬 폴더의 `references/cases.json`, `references/firms.json` 스냅숏을 쓰고, 그 파일의 `updated` 날짜를 사용자에게 말한다. 필드 뜻은 `references/schema.md`.
+웹에서 파일을 가져올 수 있으면 위 주소에서 최신본을 먼저 읽는다. 위 주소가 안 열리면 같은 파일의 GitHub 원본(`https://raw.githubusercontent.com/ernestolee13/leak-check-kr/main/data/cases.json`, `https://raw.githubusercontent.com/ernestolee13/leak-check-kr/main/data/firms.json`)을 읽는다. 둘 다 안 되면 이 스킬 폴더의 `references/cases.json`, `references/firms.json` 스냅숏을 쓰고, 그 파일의 `updated` 날짜를 사용자에게 말한다. 필드 뜻은 `references/schema.md`.
 
 ## 흐름
 
