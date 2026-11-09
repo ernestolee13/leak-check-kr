@@ -124,7 +124,7 @@
         "status": "closed",
         "url": null,
         "how": "T월드 조회는 2025-10-18에 끝났다. 당시 받은 통지 문자가 증빙이다.",
-        "checked": "2026-09-08"
+        "checked": "2026-11-09"
       },
       "notices": [
         {
@@ -177,17 +177,25 @@
           "date": "2025-09-18 무렵",
           "opening": "대상자 통지 원문은 확보하지 못했다. 「[롯데카드] 개인신용정보 미유출 확인 안내」를 받았다면 대상이 아니다.",
           "basis": "user_post"
+        },
+        {
+          "channel": "문자",
+          "sender": "롯데카드",
+          "date": "2025-09-18",
+          "opening": "[롯데카드] 개인신용정보 유출 사실 및 조치 방법 안내. 유출된 개인신용정보 항목: 카드번호, 유효기간, CVC 외 00종",
+          "basis": "press"
         }
       ],
       "search": {
         "mail": [
+          "개인신용정보 유출 사실 및 조치 방법 안내",
           "롯데카드 개인신용정보 유출"
         ],
         "sms": [
-          "롯데카드",
-          "개인신용정보"
+          "개인신용정보 유출 사실",
+          "조치 방법 안내"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "1588-8100",
       "limitation_earliest": "2028-08",
@@ -210,9 +218,9 @@
       ],
       "self_check": {
         "status": "open",
-        "url": null,
-        "how": "따릉이 앱 메뉴의 공지사항, 유출 공지 안 「유출여부 조회하기」. 휴대폰 본인인증.",
-        "checked": "2026-09-14"
+        "url": "https://www.bikeseoul.com/",
+        "how": "서울자전거 따릉이 홈페이지 첫 화면의 「개인정보 유출 여부 확인」. 앱의 유출 공지 안 「유출여부 조회하기」로도 된다. 휴대폰 본인인증.",
+        "checked": "2026-11-09"
       },
       "notices": [
         {
@@ -252,35 +260,37 @@
         "결제 정보"
       ],
       "self_check": {
-        "status": "unknown",
+        "status": "closed",
         "url": null,
-        "how": "공지일(2026-09-07)부터 30일간 홈페이지에서 조회. 지금은 닫혔을 수 있다.",
-        "checked": "2026-09-14"
+        "how": "공지일부터 30일간 열려 있던 조회는 지금 첫 화면에서 보이지 않는다. 받은 통지가 증빙이다.",
+        "checked": "2026-11-09"
       },
       "notices": [
         {
-          "channel": "문자, 이메일 또는 알림톡",
-          "sender": "강남언니",
+          "channel": "문자와 이메일 (회사 공지 기준), 웹 공지",
+          "sender": "강남언니 운영사 힐링페이퍼, 문의 cs@gangnamunni.com",
           "date": "2026-09-07",
-          "opening": "원문 미확보",
-          "basis": "press"
+          "opening": "KR-개인정보 유출 안내 및 사과문. 고객님, 안녕하세요. 강남언니 운영사 힐링페이퍼입니다.",
+          "basis": "company_notice"
         }
       ],
       "search": {
         "mail": [
-          "강남언니 개인정보 유출",
-          "힐링페이퍼 유출"
+          "힐링페이퍼 개인정보 유출 안내",
+          "강남언니 운영사 힐링페이퍼"
         ],
         "sms": [
           "강남언니",
           "힐링페이퍼"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "앱 공지 참조",
       "limitation_earliest": "2029-09",
       "fraud_warning": "회사와 병원을 사칭해 할인이나 병원 안내를 내세우는 문자를 주의하라고 공지했다.",
-      "sources": []
+      "sources": [
+        "https://unni.app/discovery/site/stray-prong-71918885"
+      ]
     },
     {
       "id": "hollys",
@@ -313,18 +323,25 @@
           "date": "2026-10-16에서 18",
           "opening": "할리스를 이용해 주시는 고객님께 깊은 사과의 말씀을 드립니다. 당사 멤버십 시스템에 인가되지 않은 접근이 발생하여 고객님의 개인정보가 유출된 사실을 2026년 10월 16일 확인하였기에 안내 드립니다.",
           "basis": "company_notice"
+        },
+        {
+          "channel": "문자 (보도 인용)",
+          "sender": "할리스",
+          "date": "2026-10-18",
+          "opening": "당사 멤버십 시스템에 인가되지 않은 접근이 발생해 개인정보가 유출된 사실을 16일 확인했다",
+          "basis": "press"
         }
       ],
       "search": {
         "mail": [
-          "할리스 개인정보 유출",
-          "할리스 멤버십 유출"
+          "할리스 인가되지 않은 접근",
+          "할리스 멤버십 개인정보 유출"
         ],
         "sms": [
           "할리스",
-          "개인정보 유출"
+          "인가되지 않은 접근"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "할리스 고객센터 02-2188-7100 (평일 09:00에서 18:00)",
       "limitation_earliest": "2029-10",
@@ -374,13 +391,14 @@
       ],
       "search": {
         "mail": [
-          "빗썸 개인정보 유출"
+          "빗썸 일부 고객, 임직원 개인정보 유출 안내",
+          "빗썸 개인정보 유출 조회"
         ],
         "sms": [
           "빗썸",
           "개인정보 유출"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "빗썸 고객센터 1661-5566",
       "limitation_earliest": "2029-10",
@@ -511,19 +529,25 @@
           "date": "2026-11-01",
           "opening": "원문 미확보",
           "basis": "press"
+        },
+        {
+          "channel": "개별 사과문 (보도 인용)",
+          "sender": "G마켓",
+          "date": "2026-11-01",
+          "opening": "고객님의 소중한 개인정보와 관련하여 심려를 끼쳐드린 점 진심으로 사과드린다",
+          "basis": "press"
         }
       ],
       "search": {
         "mail": [
-          "G마켓 개인정보 유출",
-          "지마켓 사과",
-          "스마일캐시 보상"
+          "G마켓 개인정보 심려를 끼쳐드린",
+          "G마켓 스마일캐시 개인정보"
         ],
         "sms": [
           "G마켓",
           "스마일캐시"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "G마켓 고객센터",
       "limitation_earliest": "2029-11",
@@ -548,7 +572,7 @@
       "self_check": {
         "status": "unknown",
         "url": null,
-        "how": "공지와 조회 경로를 확인하지 못했다. 공지 게시판은 로그인해야 보인다.",
+        "how": "공지 게시판은 로그인해야 보인다. 개별 안내를 받았다는 보도가 있다.",
         "checked": "2026-11-09"
       },
       "notices": [],
@@ -562,7 +586,7 @@
         ],
         "basis": "suggested"
       },
-      "contact": "위버스 고객센터",
+      "contact": "위버스샵 개인정보 문의 privacy@weverseshop.io",
       "limitation_earliest": "2029-09",
       "confidence": "press_only",
       "sources": [
@@ -591,17 +615,25 @@
         "how": "이메일과 문자 개별 통지. 문의 privacy@smtown.com",
         "checked": "2026-11-09"
       },
-      "notices": [],
+      "notices": [
+        {
+          "channel": "홈페이지 공지, 이메일 또는 문자 개별 통지",
+          "sender": "㈜에스엠엔터테인먼트 기술정보위원회",
+          "date": "2026-11-08",
+          "opening": "안녕하십니까, ㈜에스엠엔터테인먼트입니다. 당사는 최근 내부 보안 모니터링 과정에서 외부 공격자가 비인가된 방식으로 당사 업무 시스템(전자결재시스템 등)에 접근하여 보관 중이던 일부 문서 파일을 외부로 유출한 사실을 확인하였습니다.",
+          "basis": "company_notice"
+        }
+      ],
       "search": {
         "mail": [
-          "SM엔터테인먼트 개인정보 유출",
-          "from:smtown.com 개인정보"
+          "에스엠엔터테인먼트 전자결재시스템 유출",
+          "에스엠엔터테인먼트 개인정보 유출"
         ],
         "sms": [
-          "SM엔터테인먼트",
-          "개인정보"
+          "에스엠엔터테인먼트",
+          "유출"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "privacy@smtown.com",
       "limitation_earliest": "2029-11",
@@ -662,26 +694,27 @@
         "status": "closed",
         "url": null,
         "how": "공지가 내려갔다. 통지 문자가 증빙이다.",
-        "checked": "2026-09-14"
+        "checked": "2026-11-09"
       },
       "notices": [
         {
-          "channel": "문자 또는 이메일",
+          "channel": "홈페이지 공지와 같은 내용의 문자 (보도)",
           "sender": "골프존",
-          "date": "2023-12-14부터 순차",
-          "opening": "원문 미확보",
+          "date": "2023-12-14부터",
+          "opening": "지난 11월 23일 당사의 서버에서 전문해커로 추정되는 공격자에 의한 랜섬웨어 감염으로 고객의 일부 정보가 유출되는 상황이 발생했다",
           "basis": "press"
         }
       ],
       "search": {
         "mail": [
-          "골프존 개인정보 유출"
+          "골프존 랜섬웨어 고객 정보 유출",
+          "골프존 개인정보"
         ],
         "sms": [
           "골프존",
-          "유출"
+          "랜섬웨어"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "1577-4333",
       "limitation_earliest": "2026-11",
@@ -703,7 +736,7 @@
         "status": "closed",
         "url": null,
         "how": "공지가 내려갔다. 통지 문자가 증빙이다.",
-        "checked": "2026-09-14"
+        "checked": "2026-11-09"
       },
       "notices": [
         {
@@ -744,10 +777,10 @@
         "이메일"
       ],
       "self_check": {
-        "status": "unknown",
+        "status": "closed",
         "url": null,
-        "how": "GS샵 「대상 확인하기」 후 휴대폰 인증이라는 보도. 직접 열어 확인하지 못했다.",
-        "checked": "2026-09-14"
+        "how": "GS샵 첫 화면에서 대상 확인 메뉴를 찾지 못했다. 통지 문자가 증빙이다.",
+        "checked": "2026-11-09"
       },
       "notices": [
         {
@@ -787,8 +820,8 @@
       "self_check": {
         "status": "none",
         "url": null,
-        "how": "조회 창구 미게시.",
-        "checked": "2026-09-14"
+        "how": "홈페이지 첫 화면에 조회 창구가 없다.",
+        "checked": "2026-11-09"
       },
       "notices": [
         {
@@ -918,22 +951,21 @@
         "status": "none",
         "url": "https://support.fastcampus.co.kr/hc/ko/articles/57285311162905",
         "how": "전용 조회 없음. 고객센터 공식 통지 글.",
-        "checked": "2026-09-14"
+        "checked": "2026-11-09"
       },
       "notices": [
         {
-          "channel": "이메일",
-          "sender": "데이원컴퍼니",
+          "channel": "이메일 개별 통지",
+          "sender": "데이원컴퍼니 (noreply@day1company.co.kr)",
           "date": "2026-06-11, 2차 06-19",
-          "opening": "데이원컴퍼니입니다. 당사 서비스를 이용해 주시는 고객님께 안내드립니다. 조사 결과, 고객님의 개인정보(이름, 이메일 주소, 전화번호, 암호화된 비밀번호)가 유출되었음을 확인하였습니다.",
-          "basis": "user_post"
+          "opening": "제목 「개인정보 유출 통지 [데이원컴퍼니]」. 데이원컴퍼니입니다. 당사 서비스를 이용해 주시는 고객님께 안내드립니다. 조사 결과, 고객님의 개인정보(이름, 이메일 주소, 전화번호, 암호화된 비밀번호)가 유출되었음을 확인하였습니다.",
+          "basis": "notice"
         }
       ],
       "search": {
         "mail": [
-          "데이원컴퍼니 개인정보 유출",
-          "패스트캠퍼스 유출",
-          "콜로소 유출"
+          "from:day1company.co.kr 개인정보 유출 통지",
+          "데이원컴퍼니 개인정보 유출"
         ],
         "sms": [
           "데이원컴퍼니"
@@ -959,7 +991,7 @@
         "status": "none",
         "url": null,
         "how": "해킹이 아니라 제3자 제공 사건이라 개인별 통지와 조회가 없다. 2018년에서 2024년 사이 이용자 대부분이 해당.",
-        "checked": "2026-09-14"
+        "checked": "2026-11-09"
       },
       "notices": [],
       "search": {
@@ -1000,14 +1032,14 @@
       ],
       "search": {
         "mail": [
-          "미래에셋증권 개인(신용)정보 유출",
-          "미래에셋증권 유출 안내"
+          "고객 개인(신용)정보 유출 안내 미래에셋증권",
+          "미래에셋증권 개인(신용)정보 유출"
         ],
         "sms": [
           "미래에셋증권",
-          "유출 안내"
+          "개인(신용)정보 유출"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "고객센터 1588-6800 (평일 08:00에서 18:00)",
       "limitation_earliest": "2029-11",
@@ -1050,14 +1082,14 @@
       ],
       "search": {
         "mail": [
-          "대신증권 개인(신용)정보 유출",
-          "대신증권 유출 사실 안내"
+          "개인(신용)정보 유출 사실 안내 및 사과의 말씀",
+          "대신증권 개인(신용)정보 유출"
         ],
         "sms": [
           "대신증권",
-          "유출"
+          "유출 사실 안내"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "금융지원센터 1588-4488, 1544-4488",
       "limitation_earliest": "2029-10",
@@ -1095,13 +1127,14 @@
       ],
       "search": {
         "mail": [
-          "자비스 개인정보 유출",
-          "에스브이 유출"
+          "[자비스] 개인정보 유출 사실 안내 및 사과 말씀",
+          "자비스 개인정보 유출"
         ],
         "sms": [
-          "자비스"
+          "자비스",
+          "유출 사실 안내"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "자비스 운영팀 (09:00에서 18:00)",
       "limitation_earliest": "2029-11",
@@ -1206,26 +1239,35 @@
         "연락처"
       ],
       "self_check": {
-        "status": "unknown",
+        "status": "none",
         "url": null,
-        "how": "공지와 조회 경로를 확인하지 못했다.",
+        "how": "홈페이지 첫 화면에 통지 안내와 사과문, 2026-10-30 「개인정보유출 사고관련 소비자 유의사항 안내」가 있다. 조회 창구는 찾지 못했다.",
         "checked": "2026-11-09"
       },
-      "notices": [],
+      "notices": [
+        {
+          "channel": "홈페이지 팝업",
+          "sender": "예가람저축은행",
+          "date": "2026-10",
+          "opening": "개인정보 유출 사실 통지 안내 및 사과문",
+          "basis": "company_notice"
+        }
+      ],
       "search": {
         "mail": [
-          "예가람저축은행 개인정보 유출"
+          "예가람저축은행 개인정보 유출 사실 통지",
+          "예가람 사과문"
         ],
         "sms": [
-          "예가람"
+          "예가람",
+          "유출 사실 통지"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "",
       "limitation_earliest": "2029-10",
-      "confidence": "press_only",
       "sources": [
-        "https://news.mtn.co.kr/news-detail/2026100309010338927/share-modal"
+        "https://www.yegaramsb.co.kr/"
       ]
     },
     {
@@ -1233,39 +1275,45 @@
       "company": "신한은행",
       "disclosed": "2026-10",
       "audience": "customers",
-      "size": "약 2만 5천 명 (보도)",
+      "size": "약 2만 5천 명 (은행장 사과문)",
       "items": [
         "고객명",
         "전화번호",
         "CI",
         "연소득",
-        "대출 산출한도",
-        "일부 주민등록번호 (보도)"
+        "산출한도 등 대출신청 관련 정보"
       ],
       "scope_note": "대출모집인용 간편조회 서비스에서 유출. 2026-09-30 파악, 10-01 은행장 사과.",
       "self_check": {
-        "status": "unknown",
-        "url": null,
-        "how": "보도로는 신한은행 홈페이지 고객센터의 보안서비스, 개인정보보호정책 아래 「고객정보 유출 조회」와 슈퍼SOL 앱에서 조회한다. 직접 확인하지 못했다.",
+        "status": "open",
+        "url": "https://www.shinhan.com/",
+        "how": "홈페이지 첫 화면 팝업의 「자세히 보기 및 유출정보 확인하기」, 또는 정보광장 새소식의 사과문 안 「개인정보 유출 확인하기」.",
         "checked": "2026-11-09"
       },
-      "notices": [],
+      "notices": [
+        {
+          "channel": "홈페이지 사과문 (2026-10-01)",
+          "sender": "신한은행",
+          "date": "2026-10-01",
+          "opening": "개인(신용)정보 유출 관련 대고객 사과문. 신한은행 일부 고객님들의 개인(신용)정보가 유출되어 고객과 국민 여러분께 심려를 끼쳐 드린 점, 깊은 사과의 말씀을 드립니다.",
+          "basis": "company_notice"
+        }
+      ],
       "search": {
         "mail": [
-          "신한은행 고객정보 유출",
-          "신한은행 개인정보 유출"
+          "개인(신용)정보 유출 관련 대고객 사과문",
+          "신한은행 개인(신용)정보 유출"
         ],
         "sms": [
           "신한은행",
-          "유출"
+          "개인(신용)정보 유출"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
-      "contact": "전담센터 1544-2946 (보도)",
+      "contact": "전담 상담센터 1544-2946",
       "limitation_earliest": "2029-09",
-      "confidence": "press_only",
       "sources": [
-        "https://news.mtn.co.kr/news-detail/2026100112212776431"
+        "https://www.shinhan.com/hpe/index.jsp#902301000000"
       ]
     },
     {
@@ -1292,9 +1340,9 @@
       ],
       "scope_note": "2025-01 직원 PC 악성코드 감염. 개인정보위가 2026-04-23 과징금 11억 9,700만 원을 부과하며 아직 통지하지 않았다는 점을 지적하고 즉시 통지를 명령했다.",
       "self_check": {
-        "status": "unknown",
+        "status": "none",
         "url": null,
-        "how": "회사 공지와 조회 경로를 확인하지 못했다. 통지가 늦게 갔을 수 있다.",
+        "how": "홈페이지 첫 화면에서 유출 공지와 조회 메뉴를 찾지 못했다. 개인정보위가 2026-04 통지를 명령했으니 문자와 메일함을 확인한다.",
         "checked": "2026-11-09"
       },
       "notices": [],
@@ -1343,14 +1391,14 @@
       ],
       "search": {
         "mail": [
-          "플라이 개인정보 유출",
-          "flyfly 사과문"
+          "주식회사 플라이 개인정보 유출 관련 사과문",
+          "플라이 개인정보 유출"
         ],
         "sms": [
           "플라이",
-          "배달대행"
+          "사과문"
         ],
-        "basis": "suggested"
+        "basis": "notice_text"
       },
       "contact": "고객응대팀 1800-1771, fly@flyfly.co.kr (10:00에서 19:00)",
       "limitation_earliest": "2029-08",
@@ -1377,9 +1425,9 @@
       ],
       "scope_note": "2026-06-04 비인가 접근, 06-06 발표. 받는 사람 정보는 제외라고 보도됐다.",
       "self_check": {
-        "status": "unknown",
+        "status": "none",
         "url": null,
-        "how": "공지 게시판에서 유출 공지를 찾지 못했다. 고객센터 문의.",
+        "how": "홈페이지 첫 화면과 공지에서 유출 공지를 찾지 못했다. 고객센터 문의.",
         "checked": "2026-11-09"
       },
       "notices": [],
@@ -1399,6 +1447,58 @@
       "confidence": "press_only",
       "sources": [
         "https://www.ddaily.co.kr/page/view/2026060613132909130"
+      ]
+    },
+    {
+      "id": "yonsei",
+      "company": "연세대학교 (연세포털서비스)",
+      "disclosed": "2026-10",
+      "audience": "mixed",
+      "size": "일부 구성원 (보도 약 1만 5천 명)",
+      "items": [
+        "학번(사번)",
+        "사용자명",
+        "휴대폰 번호",
+        "이메일",
+        "사용자 구분",
+        "부서명",
+        "신분코드명",
+        "최종 로그인 IP",
+        "교내 내선번호",
+        "시스템 관리 정보"
+      ],
+      "scope_note": "2026-10-20, 21 연세포털서비스에 외부 비인가 접근. 주민등록번호 같은 고유식별정보와 민감정보는 포함되지 않았다고 공지했다.",
+      "self_check": {
+        "status": "login",
+        "url": "https://ysweb.yonsei.ac.kr/com/lgin/SsoCtr/initPnotice.do",
+        "how": "공지 안 「유출 항목 확인 링크」. 연세포털 로그인 후 내 유출 항목을 본다.",
+        "checked": "2026-11-09"
+      },
+      "notices": [
+        {
+          "channel": "문자(LMS)와 이메일 개별 통지, 홈페이지 공지 (2026-10-22)",
+          "sender": "연세대학교 정보통신처",
+          "date": "2026-10-22",
+          "opening": "개인정보 유출 사실 안내 및 사과문. 연세대학교 구성원 여러분께 안내드립니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "from:yonsei.ac.kr 개인정보 유출",
+          "연세대학교 개인정보 유출 사실 안내 및 사과문"
+        ],
+        "sms": [
+          "연세대학교",
+          "개인정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "피해대응 콜센터 02-2123-7015에서 7017, privacy@yonsei.ac.kr",
+      "limitation_earliest": "2029-10",
+      "fraud_warning": "학교는 이번 사고와 관련해 링크가 포함된 문자를 보내지 않는다고 공지했다.",
+      "sources": [
+        "https://www.yonsei.ac.kr/bbs/sc/58/944433/artclView.do"
       ]
     }
   ]

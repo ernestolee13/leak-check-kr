@@ -33,7 +33,7 @@ STATUS = {
 }
 CHECK = {"open": "열림", "login": "로그인 후 조회", "closed": "닫힘", "none": "조회 창구 없음", "unknown": "확인 못 함"}
 AUDIENCE = {"customers": "이용자", "employees": "임직원, 협력사", "mixed": "이용자와 임직원"}
-NOTICE_BASIS = {"company_notice": "회사 공지", "user_post": "이용자가 올린 전사", "press": "보도"}
+NOTICE_BASIS = {"company_notice": "회사 공지", "user_post": "이용자가 올린 전사", "press": "보도", "notice": "개별 통지 (발신과 제목)"}
 
 
 def cell(v) -> str:
