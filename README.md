@@ -109,7 +109,7 @@ cp -r leak-check-kr/plugins/leak-check-kr/skills/leak-check ~/.agents/skills/
 
 ## 메일 알림
 
-에이전트를 쓰지 않아도 됩니다. [안내 페이지](https://leak-cases.vibestash.app/#alerts)에서 사건을 고르고 이메일을 남기면 모집이 열리거나 조건이 바뀔 때 알려 드립니다.
+에이전트를 쓰지 않아도 됩니다. [안내 페이지](https://leak-cases.vibestash.app/alerts/)에서 사건을 고르고 이메일을 남기면 모집이 열리거나 조건이 바뀔 때 알려 드립니다.
 
 ## 문의
 
