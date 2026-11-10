@@ -12,7 +12,8 @@
 1. `python3 scripts/check_links.py`로 조회 페이지와 법무법인 접수 주소가 살아 있는지 본다. `dead`는 고치고, `unknown`(봇 차단, 시간 초과)은 브라우저로 직접 연다.
 2. `firms.json`의 각 행을 법무법인 페이지에서 다시 확인한다. 조건, 상태, 마감, `quote`, `checked`를 고친다. 페이지에 없는 값은 `미기재`로 둔다.
 3. 새 사건은 회사 공지나 개인정보보호위원회 발표로 확인한 뒤 `cases.json`에 넣는다. 보도로만 확인했으면 `confidence: press_only`.
-   - warmpod에서 승인된 유출 사건은 `python3 scripts/import_warmpod.py https://warmpod.vibestash.app/api/leak-incidents`로 먼저 미리 본다. 결과가 맞으면 `--write`를 붙여 넣는다. 이미 있는 사건은 회사 이름과 날짜(3개월 안)로 이어 붙이고(`warmpod_id`), 처음 보는 사건은 `review: "pending"`, 조회 방법 「미정」으로 들어간다.
+   - warmpod에서 승인된 유출 사건은 `python3 scripts/import_warmpod.py https://warmpod.vibestash.app/api/leak-incidents`로 먼저 미리 본다. `--write`를 붙이면 이미 있는 사건에 `warmpod_id`를 이어 붙이고(회사 이름이 같고 사고 시점이 3개월 안), 처음 보는 사건은 공개하지 않고 `review/warmpod_queue.json`(git에 올리지 않음)에 모은다.
+   - 큐에서 이용자가 직접 확인할 수 있는 유출 사건만 골라 `--write --add <warmpod id> ...`로 넣는다. 마케팅 동의나 과다 수집 처분, 임직원만의 사건, 해외 법인 사건, 같은 사건의 후속 보도는 넣지 않는다. 넣은 사건은 `review: "pending"`, 조회 방법 「미정」으로 들어간다.
    - `review: "pending"` 사건은 사람이 회사 공지와 조회 페이지, 통지 문구, 대상(이용자, 임직원), 사건 id를 확인해 채운 뒤 `review` 칸을 지운다. id를 바꿔도 `warmpod_id`는 그대로 둔다(warmpod 링크가 이 값으로 사건을 찾는다).
 4. `python3 scripts/validate_data.py --fix`로 이름 순 정렬과 금지어를 검사한다.
 5. `python3 scripts/render_docs.py`로 문서와 스냅숏을 다시 만든다.

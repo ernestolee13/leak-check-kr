@@ -1,6 +1,6 @@
 {
   "schema": "leak-cases/cases@1",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "about": "국내 대규모 개인정보 유출 사건별로 내가 대상인지 찾는 법. 통지 메일과 문자 예시, 검색어, 회사 조회 페이지를 담는다. 법률 자문이 아니다.",
   "how_to_use": "메일함과 문자함에서 search.mail, search.sms로 통지를 찾는 것이 먼저다. 회사 조회 페이지는 status가 open일 때만 보조로 쓴다. 문자로 받은 링크는 열지 말고 주소를 직접 입력한다.",
   "fallback": {
@@ -61,7 +61,8 @@
       "fraud_warning": "티빙은 주민등록번호나 금전을 요구하지 않고, 텔레그램이나 라인으로 개별 안내하지 않는다고 공지했다.",
       "sources": [
         "https://www.tving.com/help/notice"
-      ]
+      ],
+      "warmpod_id": "cj-enm-tving-data-leakage-2026"
     },
     {
       "id": "coupang",
@@ -107,7 +108,8 @@
       "note": "배송 메모에 공동현관 비밀번호를 적었다면 그것도 포함됐을 수 있다.",
       "sources": [
         "https://privacy.coupang.com/ko/center/coupang/"
-      ]
+      ],
+      "warmpod_id": "coupang-coupang-data-leak-2025-11"
     },
     {
       "id": "skt",
@@ -149,7 +151,8 @@
       "contact": "114",
       "limitation_earliest": "2028-04",
       "note": "7월 통지를 받았다면 확정 대상자다. 일부 법인은 통지 대신 「이용계약 등록사항 증명서」를 요구한다.",
-      "sources": []
+      "sources": [],
+      "warmpod_id": "skt-skt-sim-hacking-data-leak-2025-04"
     },
     {
       "id": "lottecard",
@@ -199,7 +202,8 @@
       },
       "contact": "1588-8100",
       "limitation_earliest": "2028-08",
-      "sources": []
+      "sources": [],
+      "warmpod_id": "lotte-card-lottecard-data-breach-2025"
     },
     {
       "id": "ddareungi",
@@ -290,7 +294,8 @@
       "fraud_warning": "회사와 병원을 사칭해 할인이나 병원 안내를 내세우는 문자를 주의하라고 공지했다.",
       "sources": [
         "https://unni.app/discovery/site/stray-prong-71918885"
-      ]
+      ],
+      "warmpod_id": "gangnameonni-priv-202609-llm-20"
     },
     {
       "id": "hollys",
@@ -349,7 +354,8 @@
       "sources": [
         "https://www.hollys.co.kr/news/notice/view.do?idx=239",
         "https://www.hollys.co.kr/news/notice/view.do?idx=240"
-      ]
+      ],
+      "warmpod_id": "hollys-membership-cloud-leak-2026-10"
     },
     {
       "id": "bithumb",
@@ -855,7 +861,8 @@
         "https://notice.netmarble.net/main/BbsContentView.asp?seq=13416597",
         "https://m.dcinside.com/mini/soopstreaming/2884221"
       ],
-      "note": "통지 메일 본문은 유출 항목을 이름, 아이디, 생년월일과 성별로 적었다. 회사 공지와 항목이 조금 다르다. 11월 말 1차 메일이 있었을 수 있으나 확인하지 못했다."
+      "note": "통지 메일 본문은 유출 항목을 이름, 아이디, 생년월일과 성별로 적었다. 회사 공지와 항목이 조금 다르다. 11월 말 1차 메일이 있었을 수 있으나 확인하지 못했다.",
+      "warmpod_id": "netmarble-priv-202511"
     },
     {
       "id": "louisvuitton",
@@ -1326,7 +1333,8 @@
       "limitation_earliest": "2029-09",
       "sources": [
         "https://www.shinhan.com/hpe/index.jsp#902301000000"
-      ]
+      ],
+      "warmpod_id": "shinhan-bank-ai-hacking-financial-institutions-2026"
     },
     {
       "id": "duo",
