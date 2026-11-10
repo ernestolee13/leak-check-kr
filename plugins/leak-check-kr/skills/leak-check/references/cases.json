@@ -523,10 +523,10 @@
         "주소"
       ],
       "self_check": {
-        "status": "none",
-        "url": null,
-        "how": "개별 사과문 발송과 스마일캐시 1만 원 지급이 보도됐다. 받았다면 대상이다.",
-        "checked": "2026-11-09"
+        "status": "login",
+        "url": "https://member-web.gmarket.co.kr/member/of-notice",
+        "how": "G마켓에 로그인하면 유출 안내 페이지에서 내 계정이 대상인지 볼 수 있다. 회사 공지는 고객센터 공지 「개인정보 유출 안내」(noticeNo=351395).",
+        "checked": "2026-11-10"
       },
       "notices": [
         {
@@ -559,6 +559,7 @@
       "limitation_earliest": "2029-11",
       "confidence": "press_only",
       "sources": [
+        "https://help.gmarket.co.kr/NoticeDetail?noticeNo=351395",
         "https://biz.sbs.co.kr/amp/article/20000343532"
       ]
     },
@@ -1415,7 +1416,7 @@
         "상점: 성명, 생년월일, 상호, 연락처, 사업자번호, 주소",
         "주문 고객: 주소, 일부 연락처, 일부 공동현관 비밀번호"
       ],
-      "scope_note": "2026-08-14 무렵 비인가 접근, 08-18 유출 인지. 항공사가 아니라 배달대행 업체다.",
+      "scope_note": "2026-08-14 무렵 비인가 접근, 08-18 유출 인지. 항공사가 아니라 배달대행 업체다. 요기요 주문 고객: 배달지, 안심번호, 일부는 라이더 요청사항(공동현관 비밀번호 등). 요기요는 성명 등 그 외 정보는 플라이에 전달되지 않았다고 설명. 노브랜드버거 주문 고객: 성명이 지워진 주소와 안심번호, 일부 공동현관 비밀번호와 주문 메모. 노브랜드버거 가맹점: 성명, 생년월일, 상호, 연락처, 사업자번호, 주소.",
       "self_check": {
         "status": "none",
         "url": null,
@@ -1429,6 +1430,20 @@
           "date": "2026-08-19",
           "opening": "주식회사 플라이 개인정보 유출 관련 사과문",
           "basis": "company_notice"
+        },
+        {
+          "channel": "요기요 문자 「재수탁업체(플라이) 시스템 침해사고 안내」 (보도)",
+          "sender": "요기요 (위대한상상)",
+          "date": "2026-08-26",
+          "opening": "재수탁업체(플라이) 시스템 침해사고 안내",
+          "basis": "press"
+        },
+        {
+          "channel": "신세계푸드 고객 공지 (보도, 경로 미확인)",
+          "sender": "신세계푸드 (노브랜드버거)",
+          "date": "2026-08-28 무렵",
+          "opening": "플라이가 지난 14일 외부 비인가 접근으로 인해 일부 고객의 개인정보가 유출됐다고 공지 (보도 요약)",
+          "basis": "press"
         }
       ],
       "search": {
@@ -1438,14 +1453,23 @@
         ],
         "sms": [
           "플라이",
-          "사과문"
+          "사과문",
+          "요기요",
+          "재수탁업체(플라이) 시스템 침해사고 안내"
         ],
         "basis": "notice_text"
       },
-      "contact": "고객응대팀 1800-1771, fly@flyfly.co.kr (10:00에서 19:00)",
+      "contact": "고객응대팀 1800-1771, fly@flyfly.co.kr (10:00에서 19:00) 요기요 안내상 문의처: 플라이 고객센터, 바로고 고객센터, 위대한상상 비상대응센터 (번호는 보도에 없음)",
       "limitation_earliest": "2029-08",
       "sources": [
-        "https://flyfly.co.kr/"
+        "https://flyfly.co.kr/",
+        "https://www.topstarnews.net/news/articleView.html?idxno=16174320",
+        "https://biz.heraldcorp.com/article/10855569"
+      ],
+      "fraud_warning": "요기요와 신세계푸드 모두 공동현관 비밀번호 변경과 배달원, 배송기사 사칭 연락 주의를 당부했다.",
+      "warmpod_id": [
+        "baedal-peulraetpom-eopgye-yogiyo-data-leakage",
+        "shinsegae-no-brand-burger-data-leak"
       ]
     },
     {
@@ -1551,6 +1575,1118 @@
       "sources": [
         "https://www.yonsei.ac.kr/bbs/sc/58/944433/artclView.do"
       ]
+    },
+    {
+      "id": "ok_savings_bank",
+      "company": "OK저축은행",
+      "disclosed": "2026-10",
+      "audience": "customers",
+      "size": "518명 (대출신청 페이지 250명, 모바일 수신서비스 268명, 회사 발표)",
+      "items": [
+        "대출신청 고객: 고객명, 휴대폰번호, 생년월일, 계좌번호, 자택주소, 직장주소, 직장명, 이메일, 사업자번호, 연소득금액, 신청금액, 정상금리",
+        "수신서비스 고객: 이름, 계좌번호, 상품명, 잔액, 이율, 최종거래일 (보도)"
+      ],
+      "scope_note": "홈페이지 대출신청 서비스 이용 고객(2026-10-11에서 12 해킹)과 모바일 수신서비스 이용 고객(10-15 새벽 공격). 고객별 유출 항목이 다르다.",
+      "self_check": {
+        "status": "login",
+        "url": "https://www.oksavingsbank.com/#/custNwsDtl?brdNo=101778&mastBrdNo=17",
+        "how": "사과문에 「유출 대상 여부확인은 OK저축은행 모바일 웹 또는 앱 접속을 통해 확인 가능」이라고 적혀 있다. 조회 화면 위치는 직접 확인하지 못함.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "홈페이지 공지 「개인(신용)정보 유출 안내 및 사과문」 (2026-10-15)",
+          "sender": "오케이저축은행",
+          "date": "2026-10-15",
+          "opening": "개인(신용)정보 유출 등을 안내드립니다. 오케이저축은행입니다. 먼저 고객님의 소중한 개인(신용)정보 유출 등 사실을 통지하게 되어 깊은 사과의 말씀을 드립니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "문자와 이메일 개별 통지 (보도)",
+          "sender": "OK저축은행",
+          "date": "2026-10-15에서 16",
+          "opening": "유출이 확인된 고객에게 문자메시지와 이메일로 개별 통지 (문구 미확인)",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "개인(신용)정보 유출 안내 및 사과문",
+          "오케이저축은행 개인(신용)정보 유출"
+        ],
+        "sms": [
+          "오케이저축은행",
+          "개인(신용)정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "오케이저축은행 통합접수센터 1899-7979 (09:00에서 18:00, 토요일과 공휴일 제외)",
+      "limitation_earliest": "2029-10",
+      "fraud_warning": "출처가 불분명한 링크 클릭이나 개인정보, 금융정보 입력 요구에 응하지 말라고 공지했다. 다른 사이트와 같은 비밀번호면 함께 바꾸라고 권했다.",
+      "sources": [
+        "https://www.oksavingsbank.com/#/custNwsDtl?brdNo=101778&mastBrdNo=17",
+        "https://www.joongangenews.com/news/articleView.html?idxno=555396",
+        "https://www.donga.com/news/Economy/article/all/20261016/134856337/1"
+      ],
+      "review": "pending",
+      "warmpod_id": "ok-savings-bank-loan-page-hack-leak-2026-10"
+    },
+    {
+      "id": "hana_bank",
+      "company": "하나은행",
+      "disclosed": "2026-10",
+      "audience": "customers",
+      "size": "89명 (은행 발표)",
+      "items": [
+        "주민등록번호",
+        "고객명",
+        "주소",
+        "이메일 주소",
+        "전화번호",
+        "휴대폰번호",
+        "직장명"
+      ],
+      "scope_note": "2026-09-30 영업지원시스템(ODS) 불법 침입, 10-02 유출 정황 확인. 인터넷, 모바일뱅킹 등 금융거래 정보는 포함되지 않았다고 발표. 같은 시기 금융권 AI 해킹(신한, KB국민, BNK부산, 현대캐피탈 등)의 하나.",
+      "self_check": {
+        "status": "open",
+        "url": "https://m.kebhana.com/cont/news/news01/1529105_127351.jsp",
+        "how": "공지 「개인(신용)정보 유출 관련 안내 및 사과문」 상단의 「개인(신용)정보 유출 여부 조회하기」. 모바일 주소라 PC에서는 열리지 않는다. 본인확인 방식은 확인하지 못함.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "홈페이지 새소식 「개인(신용)정보 유출 관련 안내 및 사과문」 (2026-10-03)",
+          "sender": "하나은행",
+          "date": "2026-10-03",
+          "opening": "개인(신용)정보 유출 사실을 안내 드리게 되어 고객님께 깊은 사과의 말씀을 드립니다. 당행은 2026년 9월 30일 당행의 영업지원시스템에서 발생한 불법적인 침입으로 인하여 89명 고객님의 정보가 유출된 정황을 2026년 10월 2일 확인하였습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "휴대폰, 이메일 개별 안내 (회사 공지에 적힘)",
+          "sender": "하나은행",
+          "date": "2026-10-02",
+          "opening": "문구 미확인",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "개인(신용)정보 유출 관련 안내 및 사과문",
+          "하나은행 개인(신용)정보 유출"
+        ],
+        "sms": [
+          "하나은행",
+          "개인(신용)정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "하나은행 고객센터 1599-1111",
+      "limitation_earliest": "2029-10",
+      "fraud_warning": "본인확인을 빙자한 문자 속 링크, 은행이나 택배사 사칭 전화와 문자에 주의하고 개인(신용)정보, 금융정보 입력 요구에 응하지 말라고 공지했다.",
+      "sources": [
+        "https://m.kebhana.com/cont/news/news01/1529105_127351.jsp",
+        "https://www.1conomynews.co.kr/news/articleView.html?idxno=50688"
+      ],
+      "review": "pending",
+      "warmpod_id": "hana-bank-ai-hacking-at-hana-bank"
+    },
+    {
+      "id": "kb_kookmin_bank",
+      "company": "KB국민은행",
+      "disclosed": "2026-10",
+      "audience": "mixed",
+      "size": "약 2,210명 (10-02 고객 99명과 전현직 임직원 20명, 10-26 약 2,091명 추가 확인, 은행 공지와 보도)",
+      "items": [
+        "고객명",
+        "생년월일",
+        "암호화된 고유식별정보(주민등록번호 등)",
+        "성별",
+        "주소(자택, 직장)",
+        "전화번호(휴대, 자택, 직장)",
+        "이메일",
+        "직업정보",
+        "연소득과 세대 연소득",
+        "예금잔액",
+        "계좌번호",
+        "대출 거래내역",
+        "신용카드 연체원금",
+        "신용등급",
+        "워크아웃 신청구분",
+        "임직원: 직원번호, 성명, 휴대폰번호, 이메일, 소속부점, 발령일, 퇴직일"
+      ],
+      "scope_note": "직원용 모바일 업무지원 시스템에서 유출. 2026-09-30 확인. 대부분 고객의 유출 항목은 4개 수준이고 사람마다 다르다고 공지.",
+      "self_check": {
+        "status": "open",
+        "url": "https://obank.kbstar.com/quics?page=C020721&boardId=669&compId=b058334&articleId=146878&bbsMode=view&viewPage=1&articleClass=1",
+        "how": "추가 안내 공지 상단의 「개인(신용)정보 유출여부 조회」에서 개인별 유출 항목 확인. 본인확인 방식은 확인하지 못함.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "KB정보광장 새소식 「개인(신용)정보 유출 관련 안내」 (2026-10-02)",
+          "sender": "KB국민은행",
+          "date": "2026-10-02",
+          "opening": "개인(신용)정보 유출등 사실을 통지하게 되어 깊은 사과의 말씀을 드립니다. 정보보호에 최우선으로 노력하여 왔으나, 2026년 9월 30일 고객 99명과 전현직 임직원 20명의 개인(신용)정보가 유출되었음을 확인하였습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "새소식 「기존 개인(신용)정보 유출 관련 추가 안내」 (2026-10-26)",
+          "sender": "KB국민은행",
+          "date": "2026-10-26",
+          "opening": "지난 2026년 10월 2일 공지드린 정보유출 사고에 대한 후속 점검 과정에서, 최초 확인된 119명 이외에 동일 사고로 2천여 명의 개인(신용)정보가 유출된 사실을 추가로 확인하였습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "개별 통지: 1차는 휴대폰 문자, 추가분은 문자, 이메일, 우편 (회사 공지에 적힘)",
+          "sender": "KB국민은행",
+          "date": "2026-10-02, 10-26 이후",
+          "opening": "문구 미확인",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "기존 개인(신용)정보 유출 관련 추가 안내",
+          "KB국민은행 개인(신용)정보 유출"
+        ],
+        "sms": [
+          "국민은행",
+          "개인(신용)정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "KB국민은행 정보유출 전용 상담센터 1566-8331",
+      "limitation_earliest": "2029-10",
+      "fraud_warning": "국민은행은 유출 관련으로 URL이나 링크가 든 문자를 보내지 않으며, 링크가 있으면 스미싱이라고 공지했다.",
+      "sources": [
+        "https://otalk.kbstar.com/quics?page=C019391&bbsMode=view&articleId=146650&QSL=F",
+        "https://obank.kbstar.com/quics?page=C020721&boardId=669&compId=b058334&articleId=146878&bbsMode=view&viewPage=1&articleClass=1",
+        "https://www.yna.co.kr/view/AKR20261026157900002"
+      ],
+      "review": "pending",
+      "warmpod_id": "kb-kookmin-bank-kb-data-breach-2026"
+    },
+    {
+      "id": "korean_air_asiana",
+      "company": "대한항공, 아시아나항공 (예약 시스템 수탁사 아마데우스)",
+      "disclosed": "2026-10",
+      "audience": "customers",
+      "size": "미공개",
+      "items": [
+        "예약번호",
+        "그 외 항목은 아마데우스를 통해 확인 중 (결제 정보는 포함되지 않았다는 보도)"
+      ],
+      "scope_note": "아마데우스 시스템 계정의 로그인 인증정보를 이용한 비인가 접근. 2023-08에서 2026-09 사이 발생 추정. 두 항공사 자체 DB 침해 정황은 없다고 공지. 같은 사고로 해외 항공사들도 영향받았다는 보도가 있음.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 대상 고객에게 이메일 안내. 각 항공사 문의처로 확인.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "대한항공 홈페이지 긴급공지 「일부 고객 개인정보(예약번호) 유출 안내」 (2026-10-23)",
+          "sender": "대한항공",
+          "date": "2026-10-23",
+          "opening": "대한항공에서 알려드립니다. 대한항공의 수탁사인 글로벌 항공 IT 시스템 운영사 ‘Amadeus IT Group, S.A(“아마데우스”)’의 시스템에서 일부 고객의 개인정보(예약번호)가 유출된 정황이 있는 것으로 파악되었습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "아시아나항공 홈페이지 공지 「일부 고객 개인정보(예약번호) 유출 안내」 (2026-10-23)",
+          "sender": "아시아나항공",
+          "date": "2026-10-23",
+          "opening": "아시아나항공에서 알려드립니다. 아시아나항공이 여객 예약 및 발권 서비스를 위해 이용하는 글로벌 항공 예약 시스템 운영사인 ‘Amadeus IT Group, S.A(“Amadeus”)’의 시스템에서 일부고객의 개인정보(예약번호)가 유출된 정황이 있는 것으로 파악되었습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "이메일 개별 안내 (두 회사 공지에 적힘)",
+          "sender": "대한항공, 아시아나항공",
+          "date": "2026-10-23 무렵",
+          "opening": "문구 미확인",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "일부 고객 개인정보(예약번호) 유출 안내",
+          "Amadeus 예약번호 유출"
+        ],
+        "sms": [
+          "대한항공 예약번호 유출",
+          "아시아나 예약번호 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "대한항공 여객사업본부 1588-2001, privacy1a@koreanair.com / 아시아나항공 여객본부 1588-8000, Privacy-help@flyasiana.com",
+      "limitation_earliest": "2029-10",
+      "fraud_warning": "출처가 불분명한 링크 클릭, 첨부파일 다운로드, 개인정보 입력 요구에 응하지 말라고 두 회사가 공지했다.",
+      "sources": [
+        "https://www.koreanair.com/contents/footer/customer-support/notice/2026/2610-Amadeus?pageNum=1",
+        "https://m.flyasiana.com/C/KR/KO/customer/notice/detail?id=CM202610230002530882",
+        "https://zdnet.co.kr/view?no=20261024111553"
+      ],
+      "review": "pending",
+      "warmpod_id": "korean-air-korean-airlines-asiana-airlines-amadeus-data-leak"
+    },
+    {
+      "id": "canon_academy",
+      "company": "캐논코리아 캐논아카데미 (수탁사 맑은소프트)",
+      "disclosed": "2026-09",
+      "audience": "customers",
+      "size": "미공개",
+      "items": [
+        "성명",
+        "아이디",
+        "비밀번호(암호화)",
+        "휴대전화번호(암호화)",
+        "이메일주소",
+        "주소",
+        "성별",
+        "생년월일"
+      ],
+      "scope_note": "캐논아카데미(academy.kr.canon) 회원. 2026-09-20 운영 서버에 백도어 설치, 수탁사 별도 백업 DB 접근, 09-28 유출 확인. 회원별 항목이 다르다.",
+      "self_check": {
+        "status": "open",
+        "url": "https://privacy-check.malgnsoft.com/",
+        "how": "가입 이메일 또는 휴대폰 번호로 인증번호를 받아 유출 여부와 항목 확인. 소셜로그인 회원은 아직 조회가 안 되고 privacy2@malgnsoft.com으로 문의하라고 안내.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "캐논아카데미 공지사항 「캐논아카데미 개인정보 유출사고 안내」 (2026-09-29)",
+          "sender": "캐논아카데미",
+          "date": "2026-09-29",
+          "opening": "먼저 회원님들께 심려를 끼쳐드려 진심으로 사과드립니다. 온라인 교육사이트(캐논아카데미)의 시스템과 인프라를 위탁 운영하고 있는 ㈜맑은소프트의 별도 백업 데이터베이스(DB)에 허가되지 않은 외부 접근이 발생하였으며, 이 과정에서 회원정보가 외부로 유출된 사실이 확인되었습니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "캐논아카데미 개인정보 유출사고 안내",
+          "맑은소프트 개인정보 유출"
+        ],
+        "sms": [
+          "캐논아카데미",
+          "개인정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "캐논 고객 컨텍센터 1533-3355 (평일 09:00에서 18:00), academy@kr.canon / 맑은소프트 privacy2@malgnsoft.com",
+      "limitation_earliest": "2029-09",
+      "fraud_warning": "기관 발신번호 문자라도 링크가 있거나 개인정보, 결제를 요구하면 응하지 말라고 공지했다. 회사와 기관은 문자로 링크를 보내 개인정보 입력을 요청하지 않는다고 했다. kr.canon 비밀번호와 같은 비밀번호를 쓰는 다른 사이트도 바꾸라고 권했다.",
+      "sources": [
+        "https://academy.kr.canon/board/read.jsp?id=26&code=notice",
+        "https://privacy-check.malgnsoft.com/",
+        "https://www.socialvalue.kr/news/view/1065596581026246"
+      ],
+      "review": "pending",
+      "warmpod_id": "kaenonkoria-priv-202609-llm"
+    },
+    {
+      "id": "toss_payments",
+      "company": "토스페이먼츠 (가맹점 1곳)",
+      "disclosed": "2026-09",
+      "audience": "customers",
+      "size": "2,671명, 결제 4,131건 (회사 설명, 보도)",
+      "items": [
+        "구매자 성명",
+        "마스킹 처리된 카드번호",
+        "승인번호 등 결제내역"
+      ],
+      "scope_note": "토스페이먼츠를 쓰는 특정 가맹점 1곳(이름 미공개)에서 결제연동 플랫폼 인증정보(연동키)가 노출돼 제3자가 결제내역을 조회. 카드 비밀번호, 유효기간, CVC는 포함되지 않았다고 설명. 같은 시기 코엠페이먼츠 사고와는 별개.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 대상 고객 개별 통지(보도).",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "대상 고객 개별 통지 (보도, 경로와 문구 미확인)",
+          "sender": "토스페이먼츠",
+          "date": "2026-09 초",
+          "opening": "사실 확인 즉시 해당 접근 경로를 차단하고 대상 고객 통지 및 금융위원회와 금융감독원 보고를 마쳤다 (회사 관계자 발언, 보도)",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "토스페이먼츠 결제내역",
+          "토스페이먼츠 개인정보 유출"
+        ],
+        "sms": [
+          "토스페이먼츠",
+          "결제내역 조회"
+        ],
+        "basis": "suggested"
+      },
+      "contact": "미확인",
+      "limitation_earliest": "2029-09",
+      "fraud_warning": "토스페이먼츠는 같은 시기 「결제내역, 매출전표 확인」을 사칭한 이메일 주의 공지를 올렸다(이번 사고와의 관련은 미확인).",
+      "sources": [
+        "https://zdnet.co.kr/view/?no=20260909154618",
+        "https://www.businesspost.co.kr/BP?command=article_view&num=446834",
+        "https://www.tosspayments.com/notice/25636"
+      ],
+      "confidence": "press_only",
+      "review": "pending",
+      "warmpod_id": "toseupeimeoncheu-toss-payments-payment-info-leak"
+    },
+    {
+      "id": "musinsa_29cm",
+      "company": "29CM (무신사)",
+      "disclosed": "2026-08",
+      "audience": "customers",
+      "size": "15만 9,852건 (이름만 13만 8,841건, 이름, 이메일, 휴대전화, 배송정보 함께 2만 1,011건, 보도)",
+      "items": [
+        "이름",
+        "이메일주소",
+        "휴대전화번호",
+        "배송정보",
+        "주문정보",
+        "교환, 반품정보",
+        "리뷰정보"
+      ],
+      "scope_note": "2026-08-27 주문정보 조회 API에 비정상 접근. 결제정보, 아이디, 비밀번호는 제외. 무신사 파트너사 임직원 3만 5,955건 추가 신고는 별도 사안으로 이 항목에 넣지 않음.",
+      "self_check": {
+        "status": "open",
+        "url": "https://www.29cm.co.kr/privacy/check",
+        "how": "「개인정보 유출 내역 조회」에서 본인 인증 후 유출 내역 확인. 공지에는 게시일부터 30일간이라고 적혀 있어 언제 닫힐지 모름.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "29CM 공지 「개인정보 유출 안내드립니다」 (2026-08-29)",
+          "sender": "29CM",
+          "date": "2026-08-29",
+          "opening": "안녕하세요. 29CM입니다. 29CM는 2026년 8월 27일 주문정보를 조회하는 시스템에 외부로부터 비정상적인 접근이 발생해 일부 고객님의 개인정보가 유출된 사실을 확인했습니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "29CM 개인정보 유출 안내드립니다",
+          "29CM 개인정보 유출"
+        ],
+        "sms": [
+          "29CM",
+          "개인정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "29CM 1660-2929, customer@29cm.co.kr",
+      "limitation_earliest": "2029-08",
+      "fraud_warning": "주문 내역을 언급하며 결제, 환불, 배송 오류를 안내하는 문자, 전화, 메일에 주의하라고 공지했다. 29CM는 문자나 이메일로 비밀번호나 인증번호 입력을 요구하지 않는다고 했다. 배송 요청사항에 개인정보가 있으면 바꾸라고 권했다.",
+      "sources": [
+        "https://www.29cm.co.kr/privacy/notice-260829",
+        "https://www.29cm.co.kr/privacy/check",
+        "https://news.mtn.co.kr/news-detail/2026083109235272017"
+      ],
+      "review": "pending",
+      "warmpod_id": "musinsa-29cm-api-data-leakage"
+    },
+    {
+      "id": "hm_korea",
+      "company": "H&M코리아 (에이치앤엠헤네스앤모리츠코리아)",
+      "disclosed": "2026-08",
+      "audience": "customers",
+      "size": "미공개",
+      "items": [
+        "이메일 주소",
+        "전화번호",
+        "주문, 반품 참조번호"
+      ],
+      "scope_note": "2026-08-05경 회사 내부 업무용 솔루션이 공격받음. 주민등록번호, 카드, 결제정보, 비밀번호는 영향 없다고 설명.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 절차 안내 없음 (보도).",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "고객 통지문 (보도, 경로 미확인)",
+          "sender": "H&M코리아",
+          "date": "2026-08-14",
+          "opening": "8월 5일경 업무용 솔루션이 불법적인 공격을 받아 고객 정보 일부가 유출됐다 (통지문 내용 보도 요약)",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "H&M 개인정보 유출",
+          "H&M 업무용 솔루션"
+        ],
+        "sms": [
+          "H&M",
+          "개인정보"
+        ],
+        "basis": "suggested"
+      },
+      "contact": "미확인",
+      "limitation_earliest": "2029-08",
+      "fraud_warning": "통지문에서 발신자 신원을 확인하기 어려운 연락이나 스팸 메시지에 주의하고 검증되지 않은 URL 접속을 삼가 달라고 했다(보도).",
+      "sources": [
+        "https://m.ddaily.co.kr/page/view/2026081421251877147"
+      ],
+      "confidence": "press_only",
+      "review": "pending",
+      "warmpod_id": "h-and-m-korea-hm-korea-data-leak"
+    },
+    {
+      "id": "jejuair",
+      "company": "제주항공",
+      "disclosed": "2026-08",
+      "audience": "customers",
+      "size": "100여 명 (보도)",
+      "items": [
+        "항공권 예약번호",
+        "영문 이름",
+        "여권번호 등 여권정보 (승객마다 범위 다름)"
+      ],
+      "scope_note": "2026-08-05 네이버에서 「제주항공」과 특정 편명을 검색하면 일부 예약자 정보가 보였고, 연결된 제주항공 페이지에서 여권번호 전체가 보였다. 회사는 해킹이 아닌 시스템 업데이트 오류라고 설명. 여권 재발급 비용과 보상금 10만 원 지급 발표.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 피해 고객 개별 연락(보도).",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "개별 연락 (보도, 경로와 문구 미확인)",
+          "sender": "제주항공",
+          "date": "2026-08",
+          "opening": "피해 고객에게 개별 연락해 노출 사실을 안내 (보도 요약)",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "제주항공 개인정보 노출",
+          "제주항공 여권정보"
+        ],
+        "sms": [
+          "제주항공",
+          "개인정보"
+        ],
+        "basis": "suggested"
+      },
+      "contact": "미확인",
+      "limitation_earliest": "2029-08",
+      "sources": [
+        "https://news.kbs.co.kr/news/view.do?ncd=8633991",
+        "https://www.newsfc.co.kr/news/articleView.html?idxno=80462"
+      ],
+      "confidence": "press_only",
+      "review": "pending",
+      "warmpod_id": [
+        "jeju-air-priv-202607-llm",
+        "naver-jejuair-data-exposure-2026-08"
+      ]
+    },
+    {
+      "id": "solmoro",
+      "company": "솔모로CC (한일레저)",
+      "disclosed": "2026-08",
+      "audience": "customers",
+      "size": "미공개",
+      "items": [
+        "성명",
+        "휴대전화번호",
+        "생년월일",
+        "이메일",
+        "주소 (08-09 공지에는 있고 08-23 문자에서는 빠짐)",
+        "아이디",
+        "IP"
+      ],
+      "scope_note": "경기 여주 골프장 홈페이지 회원. 2026-08-06 오후 2시경 사이버 해킹에 의한 유출 확인. 08-09 공지는 7개 항목, 08-23 문자는 6개 항목으로 수정.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 유출 확인 고객에게 개별 문자. 문의 전화로 확인.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "홈페이지 공지사항 「개인정보 유출 통지」 (2026-08-09, 이미지 공지)",
+          "sender": "솔모로컨트리클럽",
+          "date": "2026-08-09",
+          "opening": "솔모로CC를 이용해 주시는 고객님께 깊은 사과의 말씀을 드립니다. 당사는 2026년 8월 6일 오후 2시경 사이버 해킹에 의한 고객님의 개인정보 유출을 확인하고, 관련 법령에 따라 개인정보보호위원회, 한국인터넷진흥원에 신고하였습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "문자 (보도)",
+          "sender": "솔모로CC",
+          "date": "2026-08-23",
+          "opening": "유출된 개인정보는 성명, 휴대 전화번호, 생년월일, 이메일, 아이디, 아이피 총 6개 항목",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "솔모로CC 개인정보 유출 통지",
+          "솔모로 개인정보 유출"
+        ],
+        "sms": [
+          "솔모로",
+          "개인정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "솔모로CC 유출 문의 031-880-7136",
+      "limitation_earliest": "2029-08",
+      "fraud_warning": "웹사이트 비밀번호 변경을 요청했다(보도).",
+      "sources": [
+        "https://www.solmoro.com/Board/BoardView?page=1&limit=10&bd_main_seq=297&search_key=&search_value=&board_idx=1",
+        "https://www.boannews.com/news/articleView.html?idxno=145355",
+        "https://www.gukjenews.com/news/articleView.html?idxno=3675046"
+      ],
+      "review": "pending",
+      "warmpod_id": "hanilrejeo-solmorocountryclub-data-leak"
+    },
+    {
+      "id": "kt",
+      "company": "KT (알뜰폰 이용자 포함)",
+      "disclosed": "2025-09",
+      "audience": "customers",
+      "size": "1만 6,647명 (개인정보보호위원회 2026-07 처분 기준). 2025-09 KT 발표 5,561명, 2025-10 유출 가능성 고객 2만 2,227명.",
+      "items": [
+        "휴대전화번호",
+        "IMSI(가입자식별번호)",
+        "IMEI(단말기식별번호)"
+      ],
+      "scope_note": "불법 초소형 기지국(펨토셀)에 접속된 KT 망 이용자. 이 가운데 368명이 약 2억 4천만 원 무단 소액결제 피해. 개인정보보호위원회가 2026-07-29 과징금 539억 7,900만 원 의결. 서버 악성코드 감염 건은 유출 여부 확인 불가로 별도.",
+      "self_check": {
+        "status": "unknown",
+        "url": null,
+        "how": "2025년 KT 문자에 유출 대상 여부 조회 링크가 있었다는 보도가 있으나 지금도 열려 있는지 확인하지 못함. 위약금 환급은 check.kt.com (2026-11-30까지).",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "대상 고객 문자 (KT 보도자료)",
+          "sender": "KT",
+          "date": "2025-09-11",
+          "opening": "개인정보보호위원회에 신고한 사실과 피해 사실 여부를 조회할 수 있는 기능, USIM 교체 신청 및 보호서비스 가입 링크 안내 (보도자료 요약)",
+          "basis": "press"
+        },
+        {
+          "channel": "전 고객 문자 (보도)",
+          "sender": "KT",
+          "date": "2025-10-21에서 22",
+          "opening": "본 문자는 KT 휴대전화 서비스를 이용해 주시는 모든 고객님들께 발송드리는 문자입니다. KT를 이용해 주시는 고객님께 깊은 사과의 말씀을 드립니다. KT는 일부 지역에서 불법 초소형 기지국을 통한 개인정보 유출 가능성이 있는 정황을 확인했습니다.",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "KT 불법 초소형 기지국",
+          "KT 개인정보 유출"
+        ],
+        "sms": [
+          "불법 초소형 기지국",
+          "KT 휴대전화 서비스를 이용해 주시는 모든 고객님"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "KT 24시간 전담 고객센터 080-722-0100 (2025-09 보도자료 기준), 위약금 환급 전담 080-470-7790",
+      "limitation_earliest": "2028-09",
+      "sources": [
+        "https://www.yna.co.kr/view/RPR20250911008000353",
+        "https://www.news1.kr/it-science/cc-newmedia/5948926",
+        "https://www.dailian.co.kr/news/view/1672492/",
+        "https://check.kt.com/"
+      ],
+      "confidence": "press_only",
+      "review": "pending",
+      "warmpod_id": "lgyupeulreoseu-lguplus-server-destruction-investigation"
+    },
+    {
+      "id": "nike_korea",
+      "company": "나이키코리아",
+      "disclosed": "2026-07",
+      "audience": "customers",
+      "size": "비공개",
+      "items": [
+        "성명",
+        "이메일",
+        "전화번호",
+        "거래정보",
+        "구매 성향 정보",
+        "결제 정보 일부",
+        "배송 주소지"
+      ],
+      "scope_note": "권한 없는 제3자가 데이터 분석 플랫폼에 접근한 것을 2026-07-09 인지. 전체 카드번호, CVV, 비밀번호는 접근되지 않았다고 회사가 밝혔다. 포렌식 뒤 대상자에게 따로 안내 메일을 보냈다는 보도.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 2026-09 초 대상자에게 12개월 사이버 보안 모니터링 무료 등록 코드가 든 안내 메일이 갔다는 보도가 있다. 이 메일을 받았다면 대상이다.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "회원 대상 안내문 (보도 인용)",
+          "sender": "나이키코리아",
+          "date": "2026-07-15",
+          "opening": "지난 9일 권한이 없는 제3자가 플랫폼에 접근해 일부 나이키 고객들의 개인정보를 제한적으로 취득했다는 사실을 인지했다",
+          "basis": "press"
+        },
+        {
+          "channel": "메일 (보도 인용)",
+          "sender": "나이키",
+          "date": "2026-09 초",
+          "opening": "원문 미확보. 다크웹 감시 사이버 보안 모니터링 서비스 12개월 무료 등록 고유 코드와 등록 방법 안내. 맺음말: 이번 사고로 인해 불편을 끼쳐드려 죄송하다",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "나이키 권한이 없는 제3자",
+          "나이키 사이버 보안 모니터링"
+        ],
+        "sms": [
+          "나이키"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "미확인",
+      "limitation_earliest": "2029-07",
+      "fraud_warning": "나이키는 비밀번호나 인증번호를 요구하거나 QR코드 접속, 앱 설치를 유도하지 않는다며 주문, 환불, 결제를 사칭한 메일, 문자, 전화를 주의하라고 했다(보도).",
+      "confidence": "press_only",
+      "sources": [
+        "https://www.newsis.com/view/NISX20260903_0003774154",
+        "https://biz.sbs.co.kr/amp/article/20000322925"
+      ],
+      "warmpod_id": "nike-korea-nike-korea-data-breach",
+      "review": "pending"
+    },
+    {
+      "id": "stunitas",
+      "company": "에스티유니타스 (공단기, 영단기 등 단기 브랜드와 학원)",
+      "disclosed": "2026-06",
+      "audience": "customers",
+      "size": "비공개",
+      "items": [
+        "이메일",
+        "암호화된 비밀번호",
+        "이름",
+        "생년월일",
+        "성별",
+        "전화번호",
+        "주소",
+        "환불 승인정보",
+        "승인금액",
+        "환불 계좌번호"
+      ],
+      "scope_note": "학원 공지: 일부 회원의 이메일, 이름, 생년월일, 성별, 전화번호와 환불 이력의 승인정보, 승인금액, 환불 계좌번호. 온라인 공지: 이메일 가입 회원은 암호화된 비밀번호와 주소 포함, 간편회원(네이버, 카카오, 구글, Apple)은 비밀번호 제외.",
+      "self_check": {
+        "status": "open",
+        "url": "https://member.conects.com/member/global/pi_search",
+        "how": "「개인정보 피해 조회」 페이지에서 이름 입력 후 휴대전화 본인인증.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "학원 홈페이지 공지 「개인정보 유출 사고 안내」",
+          "sender": "에스티유니타스",
+          "date": "2026-06-04에서 05",
+          "opening": "에스티유니타스 학원을 이용하시는 회원님께 깊은 사과의 말씀을 드립니다. 최근 비인가된 접근으로 학원시스템을 통해 일부 개인정보가 유출된 사실을 확인하였으며,",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "공단기 고객센터 공지 「개인정보 유출 사고 안내」",
+          "sender": "에스티유니타스",
+          "date": "2026-06-08",
+          "opening": "에스티유니타스를 이용하시는 회원님께 깊은 사과의 말씀을 드립니다. 최근 비인가된 접근으로 운영시스템을 통해 일부 개인정보가 유출된 사실을 확인하였으며,",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "에스티유니타스 개인정보 유출 사고 안내",
+          "비인가된 접근으로 학원시스템"
+        ],
+        "sms": [
+          "에스티유니타스",
+          "단기"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "에스티유니타스 1670-1486, STunitas_cs@stunitas.com",
+      "limitation_earliest": "2029-06",
+      "fraud_warning": "출처 불명 문자와 전화 주의, 인증번호와 금융정보 요구에 응답하지 말라고 공지했다. 단기 사이트 비밀번호 변경을 권했다.",
+      "sources": [
+        "https://gong.conects.com/customer/notice/view?document_idx=3319598",
+        "https://acabupmu.conects.com/m/aca/notice/detail?document_srl=29514627",
+        "https://www.fnnews.com/news/202606051553049624"
+      ],
+      "warmpod_id": "st-unitas-yeongdangi-hacking-privacy-leak-2026-06",
+      "review": "pending"
+    },
+    {
+      "id": "tiffany",
+      "company": "티파니코리아 (티파니앤코)",
+      "disclosed": "2025-05",
+      "audience": "customers",
+      "size": "약 4,600명 (개인정보위)",
+      "items": [
+        "내부 고객번호",
+        "이름",
+        "전화번호",
+        "이메일",
+        "주소",
+        "판매 데이터"
+      ],
+      "scope_note": "2025-04 고객센터 직원이 보이스피싱에 속아 고객관리 SaaS 접근 권한을 넘겨 유출. 2025-05-09 인지, 05-22 통지와 신고(72시간 초과). 개인정보위 2026-02-11 과징금 24억 1,200만 원.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지와 홈페이지 공지 없음. 유출 고객에게만 메일로 알렸다는 보도. 2025-05 말 티파니 메일을 받았다면 대상이다.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "메일 (보도 인용)",
+          "sender": "티파니코리아",
+          "date": "2025-05-22 무렵",
+          "opening": "고객 데이터 관리를 위해 사용하는 수탁사의 플랫폼에서 인가받지 않은 접근을 통한 사이버 보안 사고가 일어났음을 인지했다",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "티파니 인가받지 않은 접근",
+          "티파니 수탁사 플랫폼 사이버 보안 사고"
+        ],
+        "sms": [],
+        "basis": "notice_text"
+      },
+      "contact": "미확인",
+      "limitation_earliest": "2028-05",
+      "confidence": "press_only",
+      "sources": [
+        "https://www.fnnews.com/news/202505261418507611",
+        "https://news.tf.co.kr/read/economy/2209721.htm",
+        "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&nttId=11817",
+        "https://mobile.newsis.com/view/NISX20260212_0003512428"
+      ],
+      "warmpod_id": "inc-louisvuitton-korea-privacy-2026-02~tiffany-and-co-korea",
+      "review": "pending"
+    },
+    {
+      "id": "tmoney",
+      "company": "티머니 (티머니 카드&페이)",
+      "disclosed": "2025-04",
+      "audience": "customers",
+      "size": "51,691명 (개인정보위)",
+      "items": [
+        "이름",
+        "이메일",
+        "주소",
+        "휴대전화번호"
+      ],
+      "scope_note": "2025-03-13에서 25 크리덴셜 스터핑으로 티머니 카드&페이 홈페이지 계정이 로그인된 회원. 주소와 휴대전화번호는 입력해 둔 경우만. 4,131명은 T마일리지 약 1,400만 원이 선물하기로 빠져나갔다(개인정보위).",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 공지에 따르면 유출 의심 고객에게 메일과 휴대폰으로 개별 안내했다.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "티머니 카드&페이 공지 「[공지] 개인정보 유출(의심) 관련 안내」",
+          "sender": "티머니",
+          "date": "2025-04-12",
+          "opening": "안녕하세요. 티머니입니다. 최근 신원 불상의 자(해외 IP)가 외부 경로를 통해 사전 수집된 것으로 추정되는 고객님의 계정정보(아이디/패스워드)를 이용하여 당사의 카드홈페이지에 로그인 시도를 하였습니다.",
+          "basis": "company_notice"
+        },
+        {
+          "channel": "티머니 카드&페이 공지 「[공지] 비정상 로그인 시도에 따른 고객 개인정보 보호 조치 안내」",
+          "sender": "티머니",
+          "date": "2025-03-21",
+          "opening": "㈜티머니에서 안내드립니다. 최근 타 웹사이트를 통해 사전 수집한 계정정보(ID/PW)를 이용한 티머니 카드&페이 홈페이지의 비정상 로그인 시도 정황을 확인하였습니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "티머니 개인정보 유출(의심) 관련 안내",
+          "티머니 비정상 로그인"
+        ],
+        "sms": [
+          "티머니",
+          "개인정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "티머니 고객센터 1644-0088, helper@tmoneycsp.co.kr",
+      "limitation_earliest": "2028-04",
+      "fraud_warning": "피싱, 스미싱, 악성코드 등 2차 피해 우려가 있으니 출처가 불분명한 전화, 메시지, 이메일을 주의하라고 공지했다.",
+      "sources": [
+        "https://pay.tmoney.co.kr/ncs/pct/comm/ReadNtcMttrNews.dev?ntcSno=1534",
+        "https://pay.tmoney.co.kr/ncs/pct/comm/ReadNtcMttrNews.dev?ntcSno=1531",
+        "https://www.hankyung.com/article/202601290485Y"
+      ],
+      "warmpod_id": "t-money-t-money-credential-stuffing",
+      "review": "pending"
+    },
+    {
+      "id": "weverse_staff_2026_01",
+      "company": "위버스 (위버스컴퍼니)",
+      "disclosed": "2026-01",
+      "audience": "customers",
+      "size": "31명 확인 (팬 사인회 응모자 1명, 공개방송 당첨자 30명)",
+      "items": [
+        "이름",
+        "출생연도",
+        "생년월일",
+        "전화번호",
+        "당첨 여부"
+      ],
+      "scope_note": "팬 이벤트 담당 직원이 팬 사인회 응모자 1명의 이름, 출생연도, 당첨 여부와 공개방송 이벤트 당첨자 30명의 이름, 생년월일, 전화번호를 지인 단체방에 공유. 해킹이 아닌 내부 직원 일탈.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지 없음. 공지에 따르면 유출이 확인된 이용자에게 법령 기준에 따라 개별 안내를 마쳤다.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "위버스 공지 「위버스 고객 여러분들께 알려드립니다」",
+          "sender": "위버스컴퍼니 대표이사",
+          "date": "2026-01 초",
+          "opening": "안녕하세요, 위버스컴퍼니 대표이사 최준원입니다. 최근 위버스컴퍼니 내부 직원이 타인의 개인정보를 무단으로 유출하고 사적인 목적으로 활용하고자 한 행위가 확인되었습니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "위버스 개인정보 유출 안내",
+          "위버스컴퍼니 개인정보"
+        ],
+        "sms": [
+          "위버스"
+        ],
+        "basis": "suggested"
+      },
+      "contact": "위버스컴퍼니 privacy@weverse.io (공지에 적힌 의견 접수 주소)",
+      "limitation_earliest": "2029-01",
+      "sources": [
+        "https://weverse.io/notice/32918",
+        "https://www.heraldk.com/article/2026010418095201227"
+      ],
+      "warmpod_id": "hybe-weverse-employee-data-leakage",
+      "review": "pending"
+    },
+    {
+      "id": "shinhancard_merchant",
+      "company": "신한카드 (가맹점 대표자)",
+      "disclosed": "2025-12",
+      "audience": "customers",
+      "size": "192,088건 (가맹점 대표자 약 19만 2천 명)",
+      "items": [
+        "휴대전화번호",
+        "성명",
+        "생년월일",
+        "성별"
+      ],
+      "scope_note": "2022-03에서 2025-05 신규 가맹점 대표자. 전원 휴대전화번호, 일부는 성명, 생년(월일), 성별 포함. 직원 12명이 화면 촬영이나 수기로 빼내 카드 모집 영업에 썼다. 주민등록번호, 카드번호, 계좌번호는 없다고 회사가 밝혔다. 일반 카드 회원은 대상 아님.",
+      "self_check": {
+        "status": "unknown",
+        "url": null,
+        "how": "2025-12 홈페이지에서 본인 포함 여부 조회 기능을 운영했다는 보도가 있으나 지금 공지에는 조회 버튼이 없다. 전담 상담센터 1544-0090에 문의.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "홈페이지 공지 「개인정보 유출 사실 안내 및 사과문」",
+          "sender": "신한카드",
+          "date": "2025-12-23",
+          "opening": "먼저, 신한카드 일부 가맹점 대표자님들의 개인정보가 유출된 데 대해 깊은 사과의 말씀을 드립니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "신한카드 개인정보 유출 사실 안내",
+          "신한카드 가맹점 대표자"
+        ],
+        "sms": [
+          "신한카드",
+          "가맹점 대표자"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "신한카드 전담 상담센터 1544-0090",
+      "limitation_earliest": "2028-12",
+      "fraud_warning": "신한카드 공식 안내번호(1544-7000)가 아닌 출처 불명 문자 링크를 누르지 말라고 안내했다.",
+      "sources": [
+        "https://www.shinhancard.com/pconts/html/helpdesk/dataRoom/MOBFM164/1237028_1118.html",
+        "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202512231444366190965",
+        "https://www.mt.co.kr/finance/2025/12/23/2025122315233668522"
+      ],
+      "warmpod_id": "shinhancard-data-leak-2025-12",
+      "review": "pending"
+    },
+    {
+      "id": "papajohns",
+      "company": "한국파파존스",
+      "disclosed": "2025-06",
+      "audience": "customers",
+      "size": "비공개 (국회 측 추정치는 보도마다 다르다)",
+      "items": [
+        "이름",
+        "연락처",
+        "주소",
+        "카드번호 일부(마스킹)",
+        "공동현관 비밀번호 (보도)",
+        "카드 유효기간 (보도)"
+      ],
+      "scope_note": "2017-01 이후 홈페이지 주문 고객. 주문조회 URL 숫자만 바꾸면 다른 고객 주문정보가 보였다. 회사는 카드번호가 일부 가려진 채 노출됐다고 했고, 국회에서는 카드번호 전체와 유효기간 노출을 주장했다.",
+      "self_check": {
+        "status": "none",
+        "url": null,
+        "how": "조회 페이지와 개별 통지 확인 못 함. 회사 공지만 있다.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "홈페이지 공지 「(공지) 고객 개인정보 관련 안내 및 조치사항」",
+          "sender": "한국파파존스",
+          "date": "2025-06-26",
+          "opening": "안녕하세요. 한국파파존스 입니다. 최근 언론 보도와 같이, 일부 고객 정보가 외부에 노출될 수 있는 취약점이 발견되었습니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "파파존스 개인정보",
+          "한국파파존스 고객 정보 노출"
+        ],
+        "sms": [
+          "파파존스"
+        ],
+        "basis": "suggested"
+      },
+      "contact": "파파존스 고객센터 1577-8142",
+      "limitation_earliest": "2028-06",
+      "sources": [
+        "https://pji.co.kr/cs/notice/13151",
+        "https://www.kukinews.com/article/view/kuk202506260123"
+      ],
+      "warmpod_id": "papajohns-korea-data-breach-2025-06",
+      "review": "pending"
+    },
+    {
+      "id": "albamon",
+      "company": "알바몬 (잡코리아, 현 웍스피어)",
+      "disclosed": "2025-05",
+      "audience": "customers",
+      "size": "22,473건 (회사 발표)",
+      "items": [
+        "이름",
+        "휴대폰 번호",
+        "이메일",
+        "임시 저장 이력서의 학력, 경력, 자기소개서, 사진, 포트폴리오 (일부)"
+      ],
+      "scope_note": "2025-04-30 「이력서 미리보기」 기능 해킹. 아이디, 비밀번호는 유출되지 않았다고 회사가 밝혔다. 항목은 회원마다 다르다.",
+      "self_check": {
+        "status": "unknown",
+        "url": null,
+        "how": "2025-05 알바몬에 로그인한 뒤 공지 안의 유출 여부 조회와 보상 신청으로 확인했다는 보도. 지금도 열려 있는지는 확인 못 함. 고객센터 문의.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "홈페이지 공지 「개인정보 유출 관련 안내 및 사과 말씀 드립니다」 (보도 인용)",
+          "sender": "알바몬",
+          "date": "2025-05-01",
+          "opening": "원문 미확보. 4월 30일 '이력서 미리보기' 기능에서 비정상적 접근과 해킹 시도가 감지돼 즉시 차단 조치했다",
+          "basis": "press"
+        },
+        {
+          "channel": "보상 안내 (보도 인용)",
+          "sender": "알바몬",
+          "date": "2025-05-20",
+          "opening": "4월 30일 회원님의 개인 정보가 유출된 사실을 확인해 1차 안내를 드렸다",
+          "basis": "press"
+        }
+      ],
+      "search": {
+        "mail": [
+          "알바몬 개인정보 유출 관련 안내 및 사과",
+          "알바몬 이력서 미리보기"
+        ],
+        "sms": [
+          "알바몬",
+          "개인정보 유출"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "알바몬 고객센터 1588-9351, helpdesk@albamon.com",
+      "limitation_earliest": "2028-05",
+      "confidence": "press_only",
+      "sources": [
+        "http://www.boannews.com/news/articleView.html?idxno=137100",
+        "https://www.metroseoul.co.kr/article/20250520500140",
+        "https://byline.network/2025/05/02_albamon/"
+      ],
+      "warmpod_id": "japkoria-alba-mond-preliminary-investigation",
+      "review": "pending"
+    },
+    {
+      "id": "daekyo_macadamia",
+      "company": "대교 (마카다미아)",
+      "disclosed": "2025-02",
+      "audience": "customers",
+      "size": "약 65만 명 (개인정보위, 2024-08과 2025-02 두 차례 합계)",
+      "items": [
+        "이름",
+        "아이디",
+        "암호화된 비밀번호",
+        "생년월일",
+        "휴대폰번호",
+        "CI",
+        "이메일",
+        "주소",
+        "전화번호",
+        "비밀번호 확인 질문과 답변"
+      ],
+      "scope_note": "관계사 사이트 웹 취약점을 거쳐 마카다미아 회원 DB에 접근. 2024-08 1차, 2025-02 2차 유출(개인정보위). 항목은 회원마다 다르다.",
+      "self_check": {
+        "status": "open",
+        "url": "https://macadamia.daekyo.com/cs/member-check",
+        "how": "「개인정보 유출 여부 조회」에서 로그인 정보로 조회하거나, 이름과 휴대폰번호 또는 이메일로 인증번호를 받아 조회.",
+        "checked": "2026-11-10"
+      },
+      "notices": [
+        {
+          "channel": "마카다미아 공지 「개인정보 관련 깊은 사과의 말씀을 드립니다.」",
+          "sender": "㈜대교 임직원 일동",
+          "date": "2025-02-25",
+          "opening": "최근 관계사 사이트를 통해 마카다미아 회원정보에 무단으로 접근을 시도한 정황이 확인되었습니다.",
+          "basis": "company_notice"
+        }
+      ],
+      "search": {
+        "mail": [
+          "마카다미아 개인정보 관련 깊은 사과",
+          "대교 회원정보 무단으로 접근"
+        ],
+        "sms": [
+          "대교",
+          "마카다미아"
+        ],
+        "basis": "notice_text"
+      },
+      "contact": "대교 고객센터 080-222-0909, 080-223-0909 (평일 09:00에서 18:00)",
+      "limitation_earliest": "2028-02",
+      "sources": [
+        "https://macadamia.daekyo.com/cs/notice/view?postNo=12523",
+        "https://dealsite.co.kr/articles/171628"
+      ],
+      "warmpod_id": "daegyo-macadamia-data-leak-2025",
+      "review": "pending"
     }
   ]
 }

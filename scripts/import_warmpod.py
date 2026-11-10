@@ -91,6 +91,19 @@ def new_id(event_id: str, taken: set[str]) -> str:
     return cid
 
 
+def wp_ids(c: dict) -> list[str]:
+    """`warmpod_id` is one id, or a list when several warmpod incidents are one case."""
+    v = c.get("warmpod_id")
+    return [v] if isinstance(v, str) else list(v or [])
+
+
+def add_wp(c: dict, eid: str) -> None:
+    ids = wp_ids(c)
+    if eid not in ids:
+        ids.append(eid)
+    c["warmpod_id"] = ids[0] if len(ids) == 1 else ids
+
+
 def to_event(r: dict) -> dict:
     names = [c.get("name", "").strip() for c in r.get("companies") or [] if c.get("name")]
     # startedAt is when the breach happened or was first reported; publishedAt is the lead
@@ -150,7 +163,7 @@ def main() -> int:
         return 1
     data = json.loads(CASES.read_text(encoding="utf-8"))
     cases = data["cases"]
-    by_wp = {c["warmpod_id"]: c for c in cases if c.get("warmpod_id")}
+    by_wp = {w: c for c in cases for w in wp_ids(c)}
     taken = {c["id"] for c in cases}
     today = date.today().isoformat()
     ids = {c["id"]: c for c in cases}
@@ -174,18 +187,15 @@ def main() -> int:
             continue
         if eid in manual:
             c = manual[eid]
-            if c.get("warmpod_id") and c["warmpod_id"] != eid:
-                skipped.append(f"{eid}: {c['id']} already linked to {c['warmpod_id']}")
-                continue
-            c["warmpod_id"] = eid
+            add_wp(c, eid)
             by_wp[eid] = c
             linked.append(f"{eid} {company} -> existing {c['id']} (by hand)")
             continue
-        hits = [c for c in cases if not c.get("warmpod_id")
+        hits = [c for c in cases if not wp_ids(c)
                 and (norm(company) in norm(c["company"]) or norm(c["company"].split(" (")[0]) == norm(company))
                 and abs(months(c["disclosed"]) - months(d)) <= 3]
         if len(hits) == 1:
-            hits[0]["warmpod_id"] = eid
+            add_wp(hits[0], eid)
             by_wp[eid] = hits[0]
             linked.append(f"{eid} {company} -> existing {hits[0]['id']}")
             continue
