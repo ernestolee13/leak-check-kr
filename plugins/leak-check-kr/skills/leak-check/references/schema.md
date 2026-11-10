@@ -23,6 +23,8 @@
 | `limitation_earliest` | 가장 이른 시효 만료 예상 달. 알려진 달에 3년을 더한 값이고 법률 판단이 아니다 |
 | `fraud_warning` | 회사가 공지한 사칭 주의 |
 | `confidence` | `press_only`면 회사 공지를 확인하지 못한 사건 |
+| `review` | `pending`이면 새로 들어와 아직 사람이 확인하지 않은 사건. 조회 방법과 통지 문구가 비어 있을 수 있다 |
+| `warmpod_id` | warmpod 사건 id. warmpod에서 이 사건으로 들어오는 링크에 쓴다 |
 | `sources` | 1차 자료 주소 |
 
 ## firms.json
