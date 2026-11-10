@@ -19,6 +19,8 @@ after writing, then review the diff before pushing.
     import_warmpod.py EXPORT                       dry run (path or https URL)
     import_warmpod.py EXPORT --write               link known cases; queue new ones
     import_warmpod.py EXPORT --write --add ID ...  also add these new incidents
+    import_warmpod.py EXPORT --write --link WPID=CASE ...  link by hand (a
+        sanction story months after the breach falls outside the date window)
 
 New incidents are not published by default. warmpod also tracks sanctions for
 marketing consent, employee data and foreign incidents, which are not cases a
@@ -137,6 +139,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("export")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--link", nargs="*", default=[], help="WARMPOD_ID=CASE_ID pairs to link by hand")
     ap.add_argument("--add", nargs="*", default=[], help="warmpod ids of new incidents to add as cases")
     a = ap.parse_args()
 
@@ -150,6 +153,14 @@ def main() -> int:
     by_wp = {c["warmpod_id"]: c for c in cases if c.get("warmpod_id")}
     taken = {c["id"] for c in cases}
     today = date.today().isoformat()
+    ids = {c["id"]: c for c in cases}
+    manual = {}
+    for pair in a.link:
+        wp, _, cid = pair.partition("=")
+        if cid not in ids:
+            print(f"--link {pair}: no case {cid}", file=sys.stderr)
+            return 1
+        manual[wp] = ids[cid]
     linked, added, known, skipped, queued = [], [], [], [], []
 
     for raw in events:
@@ -160,6 +171,15 @@ def main() -> int:
             continue
         if eid in by_wp:
             known.append(f"{eid} = {by_wp[eid]['id']}")
+            continue
+        if eid in manual:
+            c = manual[eid]
+            if c.get("warmpod_id") and c["warmpod_id"] != eid:
+                skipped.append(f"{eid}: {c['id']} already linked to {c['warmpod_id']}")
+                continue
+            c["warmpod_id"] = eid
+            by_wp[eid] = c
+            linked.append(f"{eid} {company} -> existing {c['id']} (by hand)")
             continue
         hits = [c for c in cases if not c.get("warmpod_id")
                 and (norm(company) in norm(c["company"]) or norm(c["company"].split(" (")[0]) == norm(company))

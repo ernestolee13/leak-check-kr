@@ -818,7 +818,8 @@
       },
       "contact": "GS25 080-999-5425",
       "limitation_earliest": "2028-02",
-      "sources": []
+      "sources": [],
+      "warmpod_id": "gs-retail-gs-credential-stuffing-fine"
     },
     {
       "id": "netmarble",
@@ -906,7 +907,8 @@
       },
       "contact": "02-3432-1854",
       "limitation_earliest": "2028-07",
-      "sources": []
+      "sources": [],
+      "warmpod_id": "inc-louisvuitton-korea-privacy-2026-02~louis-vuitton-korea"
     },
     {
       "id": "dior",
@@ -950,7 +952,8 @@
       },
       "contact": "",
       "limitation_earliest": "2028-05",
-      "sources": []
+      "sources": [],
+      "warmpod_id": "inc-louisvuitton-korea-privacy-2026-02~dior-korea"
     },
     {
       "id": "fastcampus",
