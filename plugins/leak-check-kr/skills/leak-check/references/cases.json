@@ -561,7 +561,8 @@
       "sources": [
         "https://help.gmarket.co.kr/NoticeDetail?noticeNo=351395",
         "https://biz.sbs.co.kr/amp/article/20000343532"
-      ]
+      ],
+      "warmpod_id": "gmarket-ecoupon-pin-misuse-2026-10"
     },
     {
       "id": "weverse",
@@ -1069,7 +1070,8 @@
       "sources": [
         "https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=66&messageId=2344058",
         "https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=66&messageId=2344059"
-      ]
+      ],
+      "warmpod_id": "miraeesetjeunggwon-priv-202611-llm-2"
     },
     {
       "id": "daishin",
@@ -2080,6 +2082,7 @@
       "confidence": "press_only",
       "review": "pending",
       "warmpod_id": [
+        "jeju-air-naver-search-exposure-2026-08",
         "jeju-air-priv-202607-llm",
         "naver-jejuair-data-exposure-2026-08"
       ]
@@ -2199,7 +2202,7 @@
       ],
       "confidence": "press_only",
       "review": "pending",
-      "warmpod_id": "lgyupeulreoseu-lguplus-server-destruction-investigation"
+      "warmpod_id": "korea-telecom-pipc-femtocell-fine-2026-07"
     },
     {
       "id": "nike_korea",
